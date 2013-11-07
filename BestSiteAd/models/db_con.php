@@ -65,6 +65,7 @@ class connector
         // Create table
         // Execute query
         mysqli_query($this->con,$sql);
+        echo $sql . "\nSuccesssfully executed";
 
          
     }

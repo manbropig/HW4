@@ -23,12 +23,12 @@ $table_maker = "CREATE TABLE IF NOT EXISTS $table_name
     (ID INTEGER(3) NOT NULL AUTO_INCREMENT,
     TITLE VARCHAR(30),
     URL VARCHAR(50),
-    DESC VARCHAR(200),
-    CLICKS INTEGER(3) DEFAULT 0,
+    DSCR VARCHAR(200),
+    CLICKS INTEGER(3),
     PRIMARY KEY (ID))";
+
 $connector->create_table($table_maker);
-$titles = array("Motorized Bumper Boats", "Magic Wand TV Remote", "Bubble Wrap Calendar", "Jedi Bath Robes", "Goob",
-"Yabadaba", "Abazaba", "Hungry Hippos", "When I'm hungry", "John McKluskey");
+$titles = array("Motorized Bumper Boats", "Magic Wand TV Remote", "Bubble Wrap Calendar", "Jedi Bath Robes");
 
 $urls = array("www.bumperboats.com", "www.magicremotes.com", "www.bubblewrapcalendar.com", "www.jedirobes.com");
 
@@ -49,14 +49,13 @@ bubble! Only $20.00 for a year of fun!<br/>",
 One size fits all, even Jabba the Hut could fit in one of these!<br/>
 $80.00<br/>");
 
-for($p = 0; $p < sizeof($poems); $p++)
+for($p = 0; $p < sizeof($descriptions); $p++)
 {
     $title = $titles[$p];
     $url = $urls[$p];
     $desc = $descriptions[$p];
-    $time = time();
-    $query = "INSERT INTO POEMS VALUES(0,\"$title\", \"$url\", \"$desc\", 0 )";
-
+    $query = "INSERT INTO $table_name VALUES(0,\"$title\", \"$url\", \"$desc\", 0 )";
+    $putter->in_query($query);
 }
 
 
