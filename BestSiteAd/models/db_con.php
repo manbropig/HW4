@@ -118,27 +118,26 @@ class connector
 
     /**
      * 
-     * Executes a query updating the counters
+     * Executes a query to reset all counters back to 0
      */
 
         function reset_counters()
         {
+            if (mysqli_connect_errno())
+            {
+                echo "Failed to connect to MySQL: " . mysqli_connect_error();
+            }
 
-        if (mysqli_connect_errno())
-        {
-            echo "Failed to connect to MySQL: " . mysqli_connect_error();
-        }
+            $query = "UPDATE ads SET CLICKS = 0";
 
-        $query = "UPDATE ads SET CLICKS = 0";
-
-        if(mysqli_query($this->con, $query))
-        {
-                echo "database updated";
-        }
-        else
-        {
-            echo "database not updated";
-        }
+            if(mysqli_query($this->con, $query))
+            {
+                    echo "database updated";
+            }
+            else
+            {
+                echo "database not updated";
+            }
         }
 
     /**

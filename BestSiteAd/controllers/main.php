@@ -6,6 +6,9 @@ $parent_dir = dirname(__FILE__) . '/..';
 include_once($parent_dir . "/config/config.php");
 include_once($parent_dir . "/models/db_con.php");
 
+/*
+ *
+ */
 class controller
 {
     var $data = array(); //data to be echoed in views
@@ -19,7 +22,7 @@ class controller
 
     /**
      * Retrieves list of ads and corresponding clicks
-     * 
+     * @return adds and their number of clicks
      */
     function get_ad_click_lists()
     {
@@ -50,5 +53,7 @@ echo "setup complete";
 
 $ctrl = new controller();
 $ctrl->setup();
+
+//TODO parse url with $_SERVER["REQUEST_URI"] to get method_name.
 ?>
 

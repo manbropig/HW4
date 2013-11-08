@@ -41,45 +41,66 @@ class landing_view extends view
     }
 }
 
-$landing = new landing_view();
+//$landing = new landing_view();
 ?>
 
 <!DOCTYPE html  PUBLIC "-//W3C//DTD XHTML 1.1//EN"
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
-    <title>Looney Limericks</title>
-    <link rel="stylesheet" type="text/css" href="/HW3/css/limerick_styles.css"/>
+    <title>Site Test</title>
 </head>
-<body>
+<body onload="requestAd()">
+<script type="text/javascript">
 
-<div class="upload">
-    <?php echo $landing->data["upload_link"];?>
-</div>
-<div class="rand">
-   <?php echo $landing->data["rand_link"]; ?>
-</div>
-<table class="poem_holder">
-    <tr>
-        <th><?php echo $landing->data["title"];?></th>
-    </tr>
-    <tr>
-        <th>By <?php echo $landing->data["author"];?></th>
-    </tr>
-    <tr>
-        <td class="poem"><?php echo $landing->data["poem"];?></td>
-    </tr>
-</table>
-<div class="rating_holder">
-    Average Rating: <br>
-    <?php echo $landing->data["starImage"];?>
-    <br>
-    Your Rating: <br>
-    <?php echo $landing->data["clickableStarImage"];?>
-</div>
+    function requestAd()
+    {
+
+        request = new XMLHttpRequest();
+        //request.setRequestHeader("adName","value");
+
+        request.open("POST","localhost/hw4/siteTest/controllers/proxy.php?ad=random", false);
+        document.write("data sent");
+        var self = this;
+
+        request.onreadystatechange = function()//handler function that should be run
+        {
+            switch(request.readyState)//will change based on response
+            {
+                case 4:
+                {
+                    document.getElementById("Advertisement").innerHTML = request.responseText;
+                }
+            }
+        }
+
+        request.send(null);
+    }
+</script>
+
+<div id="Advertisement">
     <?php
-        echo $landing->data["poem_lists"];
+    /*
+     * 10 news articles appearing in different order each time it loads.
+     *
+     * In the body tag there is an onload event (onload="requestAd()")
+     * After 1st news article there is a blank div tag which will be filled in with an ad
+     *
+     *      this onload event calls a js function which makes a request to
+     *      a proxy php script on SiteTest
+     *
+     *          This proxy php site calls webservice on BestSiteAd
+     *          and gets an ad back
+     *          return this ad to proxy that called it
+     *
+     *      proxy returns it to the js function that called it
+     *
+     * js function then receives the ad and puts it in the empty div tag
+     */
+
     ?>
+</div>
 </body>
+
 
 </html>
