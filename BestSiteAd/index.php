@@ -22,7 +22,7 @@ include_once("config/config.php");
 
 echo '<h1 class="siteTitle">
 	<a href='.$BASEURL
-    .' style="text-decoration:none"> LOONEY LIMERICKS</a> <br/>
+    .' style="text-decoration:none">BestSiteAd</a> <br/>
 	</h1>';
 
 //get list of entry directories and sort them descending

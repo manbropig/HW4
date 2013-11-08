@@ -81,9 +81,9 @@ class data_puller extends connector
 
     /**
      * @return array
-     * gets top 10 most recent poems
+     * gets advertisement name and clicks
      */
-    function recent_query()
+    function click_query()
     {
 
         if (mysqli_connect_errno())
@@ -91,19 +91,18 @@ class data_puller extends connector
             echo "Failed to connect to MySQL: " . mysqli_connect_error();
         }
 
-        $recent_query = "SELECT ID, TITLE FROM POEMS ORDER BY ID DESC LIMIT 10";
-        if($results = mysqli_query($this->con, $recent_query))
+        $clicks_query = "SELECT TITLE, CLICKS FROM ADS";
+        if($results = mysqli_query($this->con, $clicks_query))
         {
-            $recent = array();
             $num_rows = mysqli_num_rows($results);
-
+            $clicks = "";
             for($i = 0; $i < $num_rows; $i++)
             {
                 $row = mysqli_fetch_array($results);
-                $recent[$row['ID']] = $row["TITLE"];
+                $clicks = $clicks . $row['TITLE'] ."\t". $row['CLICKS'] . "\n";
             }
 
-            return $recent;
+            return $clicks;
         }
         else
         {

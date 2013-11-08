@@ -118,10 +118,10 @@ class connector
 
     /**
      * 
-     * Executes a query getting the feature poem id
+     * Executes a query updating the counters
      */
 
-        function get_featured()
+        function reset_counters()
         {
 
         if (mysqli_connect_errno())
@@ -129,18 +129,16 @@ class connector
             echo "Failed to connect to MySQL: " . mysqli_connect_error();
         }
 
-        $query = "SELECT ID FROM POEMS WHERE FEATURED = 1";//true
+        $query = "UPDATE ads SET CLICKS = 0";
 
-        if($results = mysqli_query($this->con, $query))
+        if(mysqli_query($this->con, $query))
         {
-            $row = mysqli_fetch_array($results);
-            $id = $row["ID"];
+                echo "database updated";
         }
         else
         {
-            $id = 0;
+            echo "database not updated";
         }
-        return $id;
         }
 
     /**
