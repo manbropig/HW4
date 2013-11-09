@@ -16,6 +16,8 @@ class Ad_Getter extends controller
     function __construct()
     {
         global $method;
+
+        $format = $_REQUEST['format'];
         parent::__construct();
 
         if($method=="get-ad")
@@ -24,32 +26,27 @@ class Ad_Getter extends controller
             //var_dump($details);
             //make an html table for the ad.
 
+
             $title = $details["title"];
             $desc = $details["desc"];
+
+            if($format=="json")
+            {
+                $data = utf8_encode(json_encode($details));
+                echo ($data);
+//                print_r($data);
+            }
+            else{
+                echo $details;
+            }
             $ad_table = "<table><caption>$title</caption><tr><td>$desc</td>
             </tr></table>";
 
-            echo $ad_table;//this gets echoed in siteTest thanks to AJAX and proxy.php
+            //echo $ad_table;//this gets echoed in siteTest thanks to AJAX and proxy.php
         }
 
     }
 
-function get_ad($format)
-{
-    //gets ad from puller
-    //builds xml or json object depending on argument
-    //returns xml or json document(string) OF that ad object
-
-    echo "get_ad called <br/>";
-    if($format == "JSON")
-    {
-
-    }
-    else //format == xml
-    {
-
-    }
-}
 
 
 

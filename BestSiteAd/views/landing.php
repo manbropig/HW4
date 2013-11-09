@@ -11,7 +11,7 @@ include_once($parent_dir . "/views/page.php");
 
 class landing_view extends view
 {
-    var $title = "Loony Limericks - home";             //title of the page/view
+    var $title = "BestSiteAd";             //title of the page/view
     var $data = array();    //data to be displayed in the view
     var $recent = array();  //list of top 10 recently added poems - make display function
     var $top = array();     //list of top 10 rated poems - make display function
@@ -49,8 +49,14 @@ $landing = new landing_view();
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
+    <?php
+    echo '<h1 class="siteTitle">
+        <a href='.$BASEURL
+    .' style="text-decoration:none">BestSiteAd</a> <br/>
+    </h1>';
+    ?>
     <title>BestSiteAd</title>
-    <link rel="stylesheet" type="text/css" href="/HW3/css/limerick_styles.css"/>
+    <link rel="stylesheet" type="text/css" href="/HW4/BestSiteAd/css/limerick_styles.css"/>
 </head>
 <body>
 

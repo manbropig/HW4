@@ -33,21 +33,13 @@ $titles = array("Motorized Bumper Boats", "Magic Wand TV Remote", "Bubble Wrap C
 $urls = array("www.bumperboats.com", "www.magicremotes.com", "www.bubblewrapcalendar.com", "www.jedirobes.com");
 
 $descriptions = array(
-"Have all the bumper car fun you have at the amusement park<br/>
-anywhere there is a pool!<br/>
-only $99.99 per bumper boat, so have a splash!",
+"Have all the bumper car fun you have at the amusement park anywhere there is a pool! only $99.99 per bumper boat, so have a splash!",
 
-"Change the channel with a flick of your wrist with our<br/>
-Magic Wand TV Remote, only $89.99.<br/>
-A small price to pay for an enchanting TV watching experience!<br/>",
+"Change the channel with a flick of your wrist with our Magic Wand TV Remote, only $89.99. A small price to pay for an enchanting TV watching experience! ",
 
-"Enjoy counting down the days with this brilliant bubble wrap calendar<br/>
-Everyday that goes by, you can feel the sweet satisfaction of popping a<br/>
-bubble! Only $20.00 for a year of fun!<br/>",
+"Enjoy counting down the days with this brilliant bubble wrap calendar Everyday that goes by, you can feel the sweet satisfaction of popping a bubble! Only $20.00 for a year of fun! ",
 
-"Smell like a jedi after every shower with your very own jedi (bath) robe!<br/>
-One size fits all, even Jabba the Hut could fit in one of these!<br/>
-$80.00<br/>");
+"Smell like a jedi after every shower with your very own jedi (bath) robe! One size fits all, even Jabba the Hut could fit in one of these! $80.00 ");
 
 for($p = 0; $p < sizeof($descriptions); $p++)
 {

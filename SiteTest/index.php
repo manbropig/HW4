@@ -15,7 +15,7 @@ CS 174
 <head>
     <meta charset="utf-8">
 </head>
-<link rel="stylesheet" type="text/css" href="css/blogStyles.css">
+<link rel="stylesheet" type="text/css" href="css/limerick_Styles.css">
 
 <?php
 include_once("config/config.php");

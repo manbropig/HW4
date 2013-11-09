@@ -24,13 +24,8 @@ CS 174
 <?php
 include_once("config/config.php");
 
-echo '<h1 class="siteTitle">
-	<a href='.$BASEURL
-    .' style="text-decoration:none">BestSiteAd</a> <br/>
-	</h1>';
-
 $method = get_method_name();
-echo $method."<br/>";
+//echo $method."<br/>";
 
 $c = "main.php";
 $view = "landing.php";
@@ -44,16 +39,14 @@ if(isset($_REQUEST['view']))
 if($method =="get-ad")
 {
     $c = 'ad_getter.php';
+    require_once('controllers/' . $c );
 }
 else
 {
-    echo $c . ' ' . $view;
+//    echo $c . ' ' . $view;
+    require_once('controllers/' . $c );
     require_once('views/' . $view );
 }
-require_once('controllers/' . $c );
-
-
-
 
 
 
@@ -65,14 +58,20 @@ require_once('controllers/' . $c );
 function get_method_name()
 {
     $url =  $_SERVER["REQUEST_URI"];
+
     $target = "index.php/";
-    $pos = strpos($url, $target );
-    $length =  strlen($target);
-    $method_pos = $pos + $length;
-    $method_start = substr($url, $method_pos); //gets beginning of method to end of url
-    $method_string = preg_split("/[\/]/", $method_start);
-    $method = $method_string[0];
-    return $method;
+    if($pos = strpos($url, $target ))
+    {
+        $length =  strlen($target);
+        $method_pos = $pos + $length;
+        $method_start = substr($url, $method_pos); //gets beginning of method to end of url
+        $method_string = preg_split("/[\/]/", $method_start);
+        $method = $method_string[0];
+        return $method;
+    }
+    else
+        return null;
+
 }
 ?>
 

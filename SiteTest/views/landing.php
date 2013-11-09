@@ -12,30 +12,18 @@ CS 174
     <title>Site Test</title>
 </head>
 
-<script type="text/javascript">
 
-    function requestAd()
-    {
-        //alert("page loaded");
-        request = new XMLHttpRequest();
-        //request.setRequestHeader("adName","value");
-
-        var self = this;
-
-        request.onreadystatechange = function()//handler function that should be run
-        {
-            if (request.readyState==4 )//will change based on response
-            {
-                document.getElementById("Advertisement").innerHTML = request.responseText;
-            }
-        }
-        //need to include "controllers/" because actually being called from index.php
-        request.open("GET","controllers/proxy.php?ad=random", false);
-        request.send(null);
-    }
-</script>
 <body onload="requestAd()">
 
+<div>
+    Story number 1
+    <p>
+    blah blah blah<br/>blah blah blah<br/>
+    blah blah blah<br/>blah blah blah<br/>
+    blah blah blah<br/>blah blah blah<br/>
+    end of story.
+    </p>
+</div>
 
 <div id="Advertisement">
     <?php
@@ -58,6 +46,27 @@ CS 174
      */
 
     ?>
+</div>
+
+
+<div>
+    Story number 2
+    <p>
+        blah blah blah<br/>blah blah blah<br/>
+        blah blah blah<br/>blah blah blah<br/>
+        blah blah blah<br/>blah blah blah<br/>
+        end of story.
+    </p>
+</div>
+
+<div>
+    Story number 3
+    <p>
+        blah blah blah<br/>blah blah blah<br/>
+        blah blah blah<br/>blah blah blah<br/>
+        blah blah blah<br/>blah blah blah<br/>
+        end of story.
+    </p>
 </div>
 </body>
 

@@ -15,17 +15,47 @@ if(isset($_GET['ad']))
     $ad = $_GET['ad'];
 else
     $ad = "no GET data";
-echo $ad;
+//echo $ad;
 
 
 $url = "";
 if($ad =="random")
 {
-    $url = "http://localhost/hw4/BestSiteAd/index.php/get-ad/";
+    $url = "http://localhost/hw4/BestSiteAd/index.php/get-ad/?format=".$format;
 }
 
 
-echo proxy_get($url);
+$response = proxy_get($url);
+
+//$response = preg_replace("/\r(?!\n)/", '', $response);
+
+$response = utf8_encode($response);
+echo $response;
+if($format=="json")
+{
+    $response = '{"title":"Motorized Bumper Boats","url":"www.bumperboats.com","desc":"Have all the bumper car fun you have at the amusement park anywhere there is a pool! only $99.99 per bumper boat, so have a splash!","clicks":"0"}';
+    echo"<br/><br/>$response<br/><br/>";
+    $json_data = json_decode($response, true);
+//    var_dump($json_data);
+
+    $title = $json_data["title"];
+    $desc = $json_data["desc"];
+    $url = $json_data["url"];
+    $ad_table = "Advertisement:<br/>$title<br/>$desc<br/>$url<br/><br/>";
+
+    echo $ad_table;
+    $json_errors = array(
+    JSON_ERROR_NONE => 'No error has occurred',
+    JSON_ERROR_DEPTH => 'The maximum stack depth has been exceeded',
+    JSON_ERROR_CTRL_CHAR => 'Control character error, possibly incorrectly encoded',
+    JSON_ERROR_SYNTAX => 'Syntax error',
+);
+    echo 'Last error : ', $json_errors[json_last_error()], PHP_EOL, PHP_EOL;
+
+
+//    var_dump($jason_data);
+//    echo $ad_table;
+}
 
 function proxy_get( $url)
 {

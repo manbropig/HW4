@@ -26,11 +26,7 @@ class controller
      */
     function get_ad_click_lists()
     {
-
-        global $BASEURL;
-        //get 10 most recent titles
         $clicks = $this->puller->click_query();
-
         return $clicks;
     }
 
@@ -46,7 +42,7 @@ class controller
         $this->data["counter_lists"] = $this->puller->click_query();
 
 
-echo "setup complete";
+//echo "setup complete";
     }
 }
 
