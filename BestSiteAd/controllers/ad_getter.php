@@ -26,30 +26,51 @@ class Ad_Getter extends controller
             //var_dump($details);
             //make an html table for the ad.
 
-
+            $id = $details['id'];
             $title = $details["title"];
             $desc = $details["desc"];
+            $url = $details["url"];
 
             if($format=="json")
             {
                 $data = utf8_encode(json_encode($details));
                 echo ($data);
-//                print_r($data);
+//                var_dump($data);
             }
-            else{
-                echo $details;
+            else //xml case
+            {
+//                var_dump($details);
+                echo $this->gen_xml($details);
             }
             $ad_table = "<table><caption>$title</caption><tr><td>$desc</td>
             </tr></table>";
 
             //echo $ad_table;//this gets echoed in siteTest thanks to AJAX and proxy.php
         }
-
     }
 
+    function gen_xml($details)
+    {
+        $id = $details['id'];
+        $title = $details["title"];
+        $desc = $details["desc"];
+        $url = $details["url"];
+        $clicks = $details['clicks'];
 
+        //<?xml version="1.0" encoding="utf-8"
+//        <!DOCTYPE ad "ad.dtd" >
+$xml = <<<XML
+<ad>
+    <adid>$id</adid>
+    <adtitle>$title</adtitle>
+    <adurl>$url</adurl>
+    <addescription>$desc</addescription>
+    <adclicks>$clicks</adclicks>
+</ad>
+XML;
 
-
+        return $xml;
+    }
 }
 $getter = new Ad_Getter();
 

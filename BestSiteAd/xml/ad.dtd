@@ -1,0 +1,9 @@
+<?xml version = "1.0" encoding ="utf-8" ?>
+<!DOCTYPE ad
+[
+<!ELEMENT adid (#PCDATA)>
+<!ELEMENT adtitle (#PCDATA)>
+<!ELEMENT adurl (#PCDATA)>
+<!ELEMENT addescription (#PCDATA)>
+<!ELEMENT adclicks (#PCDATA)>
+]>
