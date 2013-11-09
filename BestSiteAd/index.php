@@ -30,11 +30,8 @@ echo '<h1 class="siteTitle">
 	</h1>';
 
 $method = get_method_name();
+echo $method."<br/>";
 
-if($method =="get_ad")
-{
-
-}
 $c = "main.php";
 $view = "landing.php";
 
@@ -44,9 +41,17 @@ if(isset($_REQUEST['c']))
 if(isset($_REQUEST['view']))
     $view = $_REQUEST['view'].".php";
 
-echo $c . ' ' . $view;
+if($method =="get-ad")
+{
+    $c = 'ad_getter.php';
+}
+else
+{
+    echo $c . ' ' . $view;
+    require_once('views/' . $view );
+}
 require_once('controllers/' . $c );
-require_once('views/' . $view );
+
 
 
 
@@ -66,7 +71,7 @@ function get_method_name()
     $method_pos = $pos + $length;
     $method_start = substr($url, $method_pos); //gets beginning of method to end of url
     $method_string = preg_split("/[\/]/", $method_start);
-    $method = $method_string[0]."<br/>";
+    $method = $method_string[0];
     return $method;
 }
 ?>

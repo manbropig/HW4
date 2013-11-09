@@ -112,9 +112,9 @@ class data_puller extends connector
 
     /**
      * @param $con -> the db connection
-     * This function pulls a random poem from the LIMERICKS DB
+     * This function pulls a random ad from the ads DB
      */
-    function random_poem()
+    function get_rand_ad()
     {
         global $table_name;
         $total_rows = parent::get_rows($table_name);
@@ -126,13 +126,14 @@ class data_puller extends connector
         {
             $row = mysqli_fetch_array($results);
             $title = $row['TITLE'];
-            $author = $row['AUTHOR'];
-            $poem = $row['POEM'];
-            $details = ["title" => $title, "author" => $author, "poem" => $poem];
+            $url = $row['URL'];
+            $desc = $row['DSCR'];
+            $clicks = $row['CLICKS'];
+            $details = ["title" => $title, "url" => $url, "desc" => $desc, "clicks" => $clicks];
         }
         else
         {
-            $details = ["No poems to show"];
+            $details = ["No ad to show"];
         }
 
         return $details;

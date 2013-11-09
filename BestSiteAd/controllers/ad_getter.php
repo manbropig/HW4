@@ -15,10 +15,23 @@ class Ad_Getter extends controller
 {
     function __construct()
     {
+        global $method;
         parent::__construct();
-        $this->message;
-        $this->redirect;
-        $this->setup();
+
+        if($method=="get-ad")
+        {
+            $details = $this->puller->get_rand_ad();
+            //var_dump($details);
+            //make an html table for the ad.
+
+            $title = $details["title"];
+            $desc = $details["desc"];
+            $ad_table = "<table><caption>$title</caption><tr><td>$desc</td>
+            </tr></table>";
+
+            echo $ad_table;//this gets echoed in siteTest thanks to AJAX and proxy.php
+        }
+
     }
 
 function get_ad($format)
@@ -38,11 +51,14 @@ function get_ad($format)
     }
 }
 
+
+
 }
 $getter = new Ad_Getter();
 
 
 
 ?>
+
 
 
