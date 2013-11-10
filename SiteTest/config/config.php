@@ -5,9 +5,11 @@
 $BASEURL = '/HW4/';
 
 //this is the variable that should be changed based on your path
-$longURL = '/Applications/XAMPP/xamppfiles/htdocs' . $BASEURL;
+//add any parent folders of where you placed the unzipped file HW4 after local host
+//leave off the last "/"
+$longURL = 'localhost' . $BASEURL;
 
 //request configuration of either xml or json from config file
-//$format = "xml";
-$format = "json";
+$format = "xml";
+//$format = "json";
 ?>

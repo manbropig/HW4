@@ -11,49 +11,82 @@ include_once($parent_dir . "/config/config.php");
 include_once($parent_dir . "/models/db_con.php");
 include_once($parent_dir . "/controllers/main.php");
 
-if(isset($_GET['ad']))
-    $ad = $_GET['ad'];
-else
-    $ad = "no GET data";
-//echo $ad;
-
-
-$url = "";
-if($ad =="random")
+class proxy extends controller
 {
-    $url = "http://localhost/hw4/BestSiteAd/index.php/get-ad/?format=".$format;
-}
+    function __construct()
+    {
+        parent::__construct();
+
+        if(isset($_GET['ad']))
+            $this->get_ad();
+        else if(isset($_GET['method']))
+        {
+            $method = $_GET['method'];
+            if($method == "increment-choice")
+                $this->inc_ad();
+            else if($method == "increment-vulnerable")
+                $this->inc_vuln();
+            //http://localhost/hw4/siteTest/controllers/proxy.php?method=increment-vulnerable&id=1
+        }
+    }
+
+    function inc_ad()
+    {
+        global $longURL,$BASEURL;
+
+        $id = $_GET["id"];
+        $link = "$longURL"."BestSiteAd/index.php/increment-choice/?id=".$id;
+        $this->proxy_get($link);//web service request
+        echo '<meta http-equiv="refresh" content="0; url='.$BASEURL.'SiteTest/views/confirmation.php"/>';
+    }
 
 
-$response = proxy_get($url);
+    function inc_vuln()
+    {
+        global $longURL,$BASEURL;
+        $id = $_GET["id"];
+        $query = urlencode('UPDATE ADS SET CLICKS=');
+        echo $query . "<br/>";
+        $link = "$longURL"."BestSiteAd/index.php/increment-vulnerable/?q=$query&id=$id";
+        echo $this->proxy_get($link);
+//        echo '<meta http-equiv="refresh" content="0; url='.$BASEURL.'SiteTest/views/confirmation.php"/>';
 
-//$response = preg_replace("/\r(?!\n)/", '', $response);
+    }
+    function get_ad()
+    {
+        global $longURL, $format;
+        $url = "";
+        $ad = $_GET['ad'];
+        if($ad =="random")
+            $url = "$longURL"."BestSiteAd/index.php/get-ad/?format=".$format;
 
-$response = utf8_encode($response);
-//echo $response;
-if($format=="json")
-{
-    //this creates an array out of the json
-    $json_data = json_decode($response, true);
+        $response = $this->proxy_get($url);
+        $response = utf8_encode($response);
+        if($format=="json")
+        {
+            //this creates an array out of the json
+            $json_data = json_decode($response, true);
 
-    $title = $json_data["title"];
-    $desc = $json_data["desc"];
-    $url = $json_data["url"];
-//    $ad_space = "Advertisement:<br/>$title<br/>$desc<br/>$url<br/><br/>";
+            $title = $json_data["title"];
+            $desc = $json_data["desc"];
+            $url = $json_data["url"];
+            $id = $json_data["id"];
+        }
+        else //xml case
+        {
+            //this creates an object out of the xml
+            $results = simplexml_load_string($response);
 
-//    echo $ad_space;
-}
-else //xml case
-{
-    //this creates an object out of the xml
-    $results = simplexml_load_string($response);
+            $title = $results->adtitle;
+            $desc = $results->addescription;
+            $url = $results->adurl;
+            $id = $results->adid;
+        }
+        $link_back = "<a href=\"controllers/proxy.php?method=increment-choice&id=$id\">$url</a>";
 
-    $title = $results->adtitle;
-    $desc = $results->addescription;
-    $url = $results->adurl;
-}
-    //table needs formatting in CSS
-    $table = <<<TBL
+
+        //table needs formatting in CSS
+        $table = <<<TBL
 <table>
 <caption>Advertisement</caption>
 <tr>
@@ -63,21 +96,28 @@ else //xml case
 <td>$desc</td>
 </tr>
 <tr>
-<td>$url</td>
+<td>$link_back</a></td>
 </tr>
 </table>
 TBL;
 
-echo $table;
+        echo $table;
 
+    }
 
-
-function proxy_get( $url)
-{
-    $curl = curl_init();
-    curl_setopt($curl, CURLOPT_URL, $url);
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-    return curl_exec($curl);
+    function proxy_get($url)
+    {
+        $curl = curl_init();
+        curl_setopt($curl, CURLOPT_URL, $url);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+        return curl_exec($curl);
+    }
 }
+
+$proxy = new proxy();
+
+
+
+
 
 ?>

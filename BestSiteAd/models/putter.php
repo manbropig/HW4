@@ -22,44 +22,28 @@ class data_putter extends connector
     }
 
 
-    function input_poem($details)
-    {
-        global $table_name, $BASEURL;
-        $title = $details['title'];
-        $author = $details['author'];
-        $poem = $details['poem'];
-        $id = parent::get_rows($table_name);
-        $id++;
-
-        $query =
-            "INSERT INTO POEMS VALUES(0,\"$title\",
-            \"$author\", \"$poem\", 0,0,0,FALSE, null )";
-
-        $this->in_query($query);
-
-        $redirect = '<meta http-equiv="refresh" content="0;url='
-            .$BASEURL.
-            "index.php?view=confirmation&c=usher&conf=true&p=$id\"/>";
-
-        return $redirect;
-    }
-
-    function unfeature($id)
+    function add_click($id)
     {
         global $table_name;
-
-        $query = "UPDATE $table_name SET FEATURED=FALSE WHERE ID=$id";
+        $puller = new data_puller();
+        $inc = $puller->get_clicks($id);
+        $inc++;
+        $query = "UPDATE $table_name SET CLICKS=$inc WHERE ID=$id";
         $this->in_query($query);
     }
 
-    function feature($id)
+    function add_vulnerable($query, $id)
     {
-        global $table_name;
-        $time = time();
-        $query =
-            "UPDATE $table_name SET FEATURED=TRUE, TIME=$time WHERE ID=$id";
+        $puller = new data_puller();
+        $inc = $puller->get_clicks($id);
+        $inc++;
+        //$query will come in as "UPDATE $table_name SET CLICKS="
+        $query .= "$inc WHERE ID=$id";
+        echo $query;
         $this->in_query($query);
+
     }
+
 }
 
 ?>

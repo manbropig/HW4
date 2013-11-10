@@ -125,11 +125,12 @@ class data_puller extends connector
         if($results = mysqli_query($this->con, $rand_query))
         {
             $row = mysqli_fetch_array($results);
+            $id = $row["ID"];
             $title = $row['TITLE'];
             $url = $row['URL'];
             $desc = $row['DSCR'];
             $clicks = $row['CLICKS'];
-            $details = ["title" => $title, "url" => $url, "desc" => $desc, "clicks" => $clicks];
+            $details = ["id"=>$id, "title" => $title, "url" => $url, "desc" => $desc, "clicks" => $clicks];
         }
         else
         {
@@ -202,31 +203,22 @@ class data_puller extends connector
      * @return array
      * gets a specific poem's details
      */
-    function get_poem($id)
+    function get_clicks($id)
     {
-
+        global $table_name;
         if (mysqli_connect_errno())
         {
             echo "Failed to connect to MySQL: " . mysqli_connect_error();
         }
 
-        $query = "SELECT * FROM POEMS WHERE ID = \"$id\"";
+        $query = "SELECT CLICKS FROM $table_name WHERE ID = \"$id\"";
 
         if($results = mysqli_query($this->con, $query))
         {
             $row = mysqli_fetch_array($results);
-            $title = $row['TITLE'];
-            $author = $row['AUTHOR'];
-            $poem = $row['POEM'];
-            $details = ["title" => $title,
-                "author" => $author, "poem" => $poem];
+            $clicks = $row['CLICKS'];
         }
-        else
-        {
-            $details = ["No poems to show"];
-        }
-
-        return $details;
+        return $clicks;
     }
 }
 

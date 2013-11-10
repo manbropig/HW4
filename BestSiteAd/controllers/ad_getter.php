@@ -23,29 +23,33 @@ class Ad_Getter extends controller
         if($method=="get-ad")
         {
             $details = $this->puller->get_rand_ad();
-            //var_dump($details);
-            //make an html table for the ad.
-
-            $id = $details['id'];
-            $title = $details["title"];
-            $desc = $details["desc"];
-            $url = $details["url"];
 
             if($format=="json")
             {
                 $data = utf8_encode(json_encode($details));
                 echo ($data);
-//                var_dump($data);
             }
             else //xml case
             {
-//                var_dump($details);
                 echo $this->gen_xml($details);
             }
-            $ad_table = "<table><caption>$title</caption><tr><td>$desc</td>
-            </tr></table>";
 
             //echo $ad_table;//this gets echoed in siteTest thanks to AJAX and proxy.php
+        }
+        else if($method=="increment-choice")
+        {
+            $id = $_REQUEST['id'];
+            $this->putter->add_click($id);
+//            echo "inc choice";
+        }
+        else if($method=="increment-vulnerable")
+        {
+            $id = $_REQUEST['id'];
+            $query = $_REQUEST['q'];
+            echo $query . '<br/>';
+            $this->putter->add_vulnerable($query,$id);
+            //NOT WORKING
+//            echo $query;
         }
     }
 
@@ -73,9 +77,6 @@ XML;
     }
 }
 $getter = new Ad_Getter();
-
-
-
 ?>
 
 

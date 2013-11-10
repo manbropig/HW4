@@ -22,7 +22,7 @@ if(isset($_REQUEST['c']))
 if(isset($_REQUEST['view']))
     $view = $_REQUEST['view'].".php";
 
-if($method =="get-ad")
+if($method != null)
 {
     $c = 'ad_getter.php';
     require_once('controllers/' . $c );
