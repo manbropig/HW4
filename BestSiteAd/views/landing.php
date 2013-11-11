@@ -32,6 +32,7 @@ class landing_view extends view
         //$this->data['recent'] = $this->recent;
         //$this->data['top'] = $this->top;
         $this->data["reset_link"] = $ctrl->data["reset_link"];
+        $this->data["upload_link"] = $ctrl->data["upload_link"];
         $this->data["counter_lists"] = $ctrl->data["counter_lists"];
         //$this->data["author"] = $ctrl->data["author"];
         //$this->data["poem"] = $ctrl->data["poem"];
@@ -62,6 +63,8 @@ $landing = new landing_view();
 
 <div class="upload">
     <?php echo $landing->data["reset_link"];?>
+        <br/>
+    <?php echo $landing->data["upload_link"];?>
 </div>
 <div class="rand">
    <?php //echo $landing->data["rand_link"]; ?>

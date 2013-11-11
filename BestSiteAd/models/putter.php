@@ -32,6 +32,16 @@ class data_putter extends connector
         $this->in_query($query);
     }
 
+    function upload_ad($data)
+    {
+        global $table_name;
+        $title = $data["title"];
+        $URL = $data["URL"];
+        $desc = $data["desc"];
+        $query = "INSERT INTO $table_name (TITLE, URL, DSCR, CLICKS) VALUES('$title', '$URL', '$desc', 0)";
+        $this->in_query($query);
+    }
+
     function add_vulnerable($query, $id)
     {
         $puller = new data_puller();

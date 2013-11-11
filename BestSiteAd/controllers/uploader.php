@@ -19,22 +19,22 @@ class uploader extends controller
     {
         parent::setup();
 
-    $poem_input =  <<<POEM
-<form name='poemForm' method="post" action="controllers/cleaner.php"
+    $ad_input =  <<<AD
+<form name='adForm' method="post" action="controllers/uploadAd.php"
 onsubmit="return validateForm()">
                 <input class="submit" type="text" name="title"
                 placeholder='Title'><br/>
-                <input class="submit" type="text" name="author"
-                placeholder='Author Name'>
+                <input class="submit" type="text" name="URL"
+                placeholder='URL'>
                 <br/>
-                <textarea  id="poem" name="poem" rows="5" cols="35"
-                placeholder='Type poem here'></textarea>
+                <textarea  id="desc" name="desc" rows="5" cols="35"
+                placeholder='Type advertisement description here'></textarea>
                 <br/>
                 <input type="submit" value="Submit">
              </form>
-POEM;
+AD;
 
-        $this->data["poem_form"] = $poem_input;
+        $this->data["ad_form"] = $ad_input;
 
     }
 }

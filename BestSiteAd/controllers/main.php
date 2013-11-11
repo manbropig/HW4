@@ -38,7 +38,12 @@ class controller
             "<a href="
             .$BASEURL."index.php?view=landing&c=reset_controller>
             Reset Counter</a>";
+        $upload =
+            "<a href="
+            .$BASEURL."index.php?view=upload_page&c=uploader>
+            Upload Ad</a>";
         $this->data["reset_link"] = $reset;
+        $this->data["upload_link"] = $upload;
         $this->data["counter_lists"] = $this->puller->click_query();
 
 

@@ -76,7 +76,7 @@ class proxy extends controller
         {
             //this creates an object out of the xml
             $results = simplexml_load_string($response);
-
+//print_r($results);
             $title = $results->adtitle;
             $desc = $results->addescription;
             $url = $results->adurl;
@@ -110,6 +110,7 @@ TBL;
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+        //curl_setopt($curl, CURLOPT_PORT, 8080);
         return curl_exec($curl);
     }
 }

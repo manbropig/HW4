@@ -25,8 +25,8 @@ class upload_view extends view
         $this->data['css'] =  parent::css;
 //        $this->data['recent'] = $this->recent;
 //        $this->data['top'] = $this->top;
-        $this->data["poem_form"] = $ctrl->data["poem_form"];
-        $this->data["poem_lists"] = $ctrl->data["poem_lists"];
+        $this->data["ad_form"] = $ctrl->data["ad_form"];
+        //$this->data["poem_lists"] = $ctrl->data["poem_lists"];
     }
 
 }
@@ -43,7 +43,7 @@ $uploader = new upload_view();
 </head>
 <body>
 <div class="enter">
-    <?php echo $uploader->data["poem_form"];?>
+    <?php echo $uploader->data["ad_form"];?>
 </div>
 <script type="text/javascript">
 
@@ -55,9 +55,10 @@ $uploader = new upload_view();
      */
     function validateForm()
     {
-        var poemForm = document.forms["poemForm"];
-        var title = poemForm["title"].value;
-        var auth = poemForm["author"].value;
+        var adForm = document.forms["adForm"];
+        var title = adForm["title"].value;
+        var URL = adForm["URL"].value;
+        var desc = adForm["desc"].value;
 
         var ret = true;
 
@@ -67,62 +68,25 @@ $uploader = new upload_view();
             ret = false;
         }
 
-        if (auth==null || auth=="" || auth.length > 30)
+        if (URL==null || URL=="" || URL.length > 50)
         {
             {
-                alert("Author must be between 1 and 30 characters");
+                alert("URL must be between 1 and 50 characters");
                 ret = false;
             }
         }
 
-        var poem = poemForm["poem"].value;//document.getElementById("poem").value;
-        var lines = poem.split("\n");
-        var lineCount = lines.length;
-
-        if(poem==null || poem=="" || lineCount != 5)
+        if(desc==null || desc=="")
         {
-            alert("poem must be 5 lines");
+            alert("Description can not be blank");
             ret = false;
         }
 
-        for(var i = 0; i < lineCount; i++)
-        {
-            var line = lines[i];
-
-            /**CAREFUL - MIGHT REMOVE NEWLINES WHICH WE NEED **/
-            //remove trailing whitespace from each line
-            line = line.replace(/^\s+|\s+$/g,'')
-
-            var lineLength = line.length;
-
-            if(lineLength == 0)
-            {
-                ret = false;
-                alert("No skipping lines");
-
-            }
-            if(lineLength > 30)
-            {
-                ret = false;
-                alert("Sorry! Only 30 characters allowed per line");
-                break;
-            }
-        }
         return ret;
     }
-
-//    Title: Guy Named Noah
-//    Author: Louvenia Duncan
-//
-//    I once knew a guy named Noah
-//    Mean as the snake called Boa
-//    Loved him still
-//    Wasn't God's will
-//    Sent him back to Samoa
-
 </script>
 
-<div><?php echo $uploader->data["poem_lists"];?></div>
+<div><?php //echo $uploader->data["poem_lists"];?></div>
 </body>
 
 </html>
