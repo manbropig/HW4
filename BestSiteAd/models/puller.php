@@ -120,7 +120,7 @@ class data_puller extends connector
         global $table_name;
         $total_rows = parent::get_rows($table_name);
 
-        $index = rand(1, $total_rows); //gen rand # between 0 and amt of rows
+        $index = rand(1, $total_rows-1); //gen rand # between 0 and amt of rows
         //THIS QUERY SHOULD ONLY RETURN ONE ROW
         $rand_query = "SELECT * FROM $table_name WHERE ID = $index";
         if($results = mysqli_query($this->con, $rand_query))
