@@ -266,7 +266,7 @@ class connector
         $query = "SELECT COUNT(*) FROM $table_name";
         if($results = mysqli_query($this->con, $query))
         {
-            $num_rows = mysqli_num_rows($results);
+            //$num_rows = mysqli_num_rows($results);
 
             $row = mysqli_fetch_array($results);
             $num_rows = $row["0"];
