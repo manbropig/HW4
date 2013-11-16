@@ -25,8 +25,8 @@ class uploadAd extends controller
                 $putter = new data_putter();
 
 
-                if(isset($_POST["title"]) && isset($_POST["URL"]) && isset($_POST["desc"]))
-{
+        if(isset($_POST["title"]) && isset($_POST["URL"]) && isset($_POST["desc"]))
+        {
                 $title = $_POST["title"];
                 $URL = $_POST["URL"];
                 $desc = $_POST["desc"];
@@ -37,15 +37,8 @@ class uploadAd extends controller
                 echo '<meta http-equiv="refresh" content="0;url='
                     .$BASEURL.
                     'index.php?view=landing&c=main"/>';
-}
-else
-{
+        }
 
-
-                echo '<meta http-equiv="refresh" content="0;url='
-                    .$BASEURL.
-                    'index.php?view=upload_page&c=uploader"/>';
-}
 
 }
 }

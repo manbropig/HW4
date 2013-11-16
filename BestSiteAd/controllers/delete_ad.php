@@ -8,7 +8,7 @@ include_once($parent_dir . "/config/config.php");
 include_once($parent_dir . "/models/db_con.php");
 include_once($parent_dir . "/controllers/main.php");
 
-class reset extends controller
+class delete extends controller
 {
     function __construct()
     {
@@ -20,19 +20,17 @@ class reset extends controller
     {
         global $BASEURL;
 
+        if(isset($_REQUEST['i']))
+        $i = $_REQUEST['i'];
 
                 $connection = new connector();
-                $connection-> reset_counters();
+                $connection-> delete_ad($i);
 
 
                 echo '<meta http-equiv="refresh" content="0;url='
                     .$BASEURL.
                     'index.php?view=landing&c=main"/>';
-
-
-                echo "this is working";
-
 }
 }
-$ctrl = new reset();
+$ctrl = new delete();
 ?>

@@ -23,7 +23,6 @@ class Ad_Getter extends controller
         if($method=="get-ad")
         {
             $details = $this->puller->get_rand_ad();
-
             if($format=="json")
             {
                 $data = utf8_encode(json_encode($details));

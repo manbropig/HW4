@@ -142,6 +142,33 @@ class connector
 
     /**
 
+     * @param $i - title in db
+     * Executes a query to delete specific AD
+     */
+
+        function delete_ad($i)
+        {
+            if (mysqli_connect_errno())
+            {
+                echo "Failed to connect to MySQL: " . mysqli_connect_error();
+            }
+
+            $query = "DELETE FROM ads WHERE ID= \"$i\"";
+
+            if(mysqli_query($this->con, $query))
+            {
+                    echo "database updated";
+
+            }
+            else
+            {
+                echo "database not updated";
+            }
+        }
+
+
+    /**
+
      * @param $query
      * Executes a query getting the rating result
      */

@@ -76,14 +76,13 @@ class proxy extends controller
         {
             //this creates an object out of the xml
             $results = simplexml_load_string($response);
-//print_r($results);
+                //echo $response;
             $title = $results->adtitle;
             $desc = $results->addescription;
             $url = $results->adurl;
             $id = $results->adid;
         }
         $link_back = "<a href=\"controllers/proxy.php?method=increment-choice&id=$id\">$url</a>";
-
 
         //table needs formatting in CSS
         $table = <<<TBL
@@ -110,7 +109,7 @@ TBL;
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-        //curl_setopt($curl, CURLOPT_PORT, 8080);
+//        curl_setopt($curl, CURLOPT_PORT, 8080);
         return curl_exec($curl);
     }
 }

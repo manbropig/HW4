@@ -31,6 +31,7 @@ class landing_view extends view
         //$this->data['css'] =  parent::css;
         //$this->data['recent'] = $this->recent;
         //$this->data['top'] = $this->top;
+        $this->data["ad_form"] = $ctrl->data["ad_form"];
         $this->data["reset_link"] = $ctrl->data["reset_link"];
         $this->data["upload_link"] = $ctrl->data["upload_link"];
         $this->data["counter_lists"] = $ctrl->data["counter_lists"];
@@ -49,7 +50,7 @@ $landing = new landing_view();
 <!DOCTYPE html  PUBLIC "-//W3C//DTD XHTML 1.1//EN"
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" >
-<head>
+<head><script type="text/javascript" src="/HW4/BestSiteAd/js/formValidator.js"></script>
     <?php
     echo '<h1 class="siteTitle">
         <a href='.$BASEURL
@@ -63,15 +64,13 @@ $landing = new landing_view();
 
 <div class="upload">
     <?php echo $landing->data["reset_link"];?>
-        <br/>
-    <?php echo $landing->data["upload_link"];?>
 </div>
 <div class="rand">
    <?php //echo $landing->data["rand_link"]; ?>
 </div>
 <table class="poem_holder">
     <tr>
-        <th><?php //echo $landing->data["title"];?></th>
+        <th>List of Ads</th>
     </tr>
     <tr>
         <th><?php echo $landing->data["counter_lists"];?></th>
@@ -80,6 +79,12 @@ $landing = new landing_view();
         <td class="poem"><?php //echo $landing->data["poem"];?></td>
     </tr>
 </table>
+<div>
+        <br/>
+Create new ad here:
+        <?php echo $landing->data["ad_form"];?>
+
+</div>
 
     <?php
         //echo $landing->data["poem_lists"];

@@ -50,37 +50,6 @@ for($p = 0; $p < sizeof($descriptions); $p++)
     $query = "INSERT INTO $table_name VALUES(0,\"$title\", \"$url\", \"$desc\", 0 )";
     $putter->in_query($query);
 }
-/*
-$table_maker = "CREATE TABLE IF NOT EXISTS news
-    (ID INTEGER(1) NOT NULL,
-    TITLE VARCHAR(30),
-    URL VARCHAR(50),
-    DSCR VARCHAR(200),
-    CLICKS INTEGER(3),
-    PRIMARY KEY (TITLE))";
-
-$connector->create_table($table_maker);
-$titles = array("Bank Robbery", "Magic Wand TV Remote", "Bubble Wrap Calendar", "Jedi Bath Robes");
-
-$urls = array("www.bumperboats.com", "www.magicremotes.com", "www.bubblewrapcalendar.com", "www.jedirobes.com");
-
-$descriptions = array(
-"Have all the bumper car fun you have at the amusement park anywhere there is a pool! only $99.99 per bumper boat, so have a splash!",
-
-"Change the channel with a flick of your wrist with our Magic Wand TV Remote, only $89.99. A small price to pay for an enchanting TV watching experience! ",
-
-"Enjoy counting down the days with this brilliant bubble wrap calendar Everyday that goes by, you can feel the sweet satisfaction of popping a bubble! Only $20.00 for a year of fun! ",
-
-"Smell like a jedi after every shower with your very own jedi (bath) robe! One size fits all, even Jabba the Hut could fit in one of these! $80.00 ");
-
-for($p = 0; $p < sizeof($descriptions); $p++)
-{
-    $title = $titles[$p];
-    $url = $urls[$p];
-    $desc = $descriptions[$p];
-    $query = "INSERT INTO $table_name VALUES(0,\"$title\", \"$url\", \"$desc\", 0 )";
-    $putter->in_query($query);
-}*/
 
 
 $connector->close_db();

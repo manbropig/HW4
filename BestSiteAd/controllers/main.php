@@ -22,29 +22,56 @@ class controller
 
     /**
      * Retrieves list of ads and corresponding clicks
-     * @return adds and their number of clicks
+     * @return ads and their number of clicks
      */
     function get_ad_click_lists()
     {
-        $clicks = $this->puller->click_query();
-        return $clicks;
+        global $BASEURL;
+        $list = "<ul>";
+        $result = $this->puller->click_query();
+
+        for($i = 0; $i < sizeof($result[0]); $i++)
+        {
+                $list = $list . "<li>" . $result[0][$i] . " -- " . "<a href= ". $BASEURL . "index.php?c=delete_ad&i=" . $result[1][$i] . ">[DELETE]</a></li>";
+        }
+                $list = $list . "</ul>";
+
+        return $list;
     }
 
     function setup()
     {
         global $BASEURL;
 
+    $ad_input =  <<<AD
+<form name='adForm' method="post" action="controllers/uploadAd.php"
+onsubmit="return validateForm()">
+                <input type="text" name="title"
+                placeholder='Title'><br/>
+                <input type="text" name="URL"
+                placeholder='URL'>
+                <br/>
+                <textarea  id="desc" name="desc" rows="5" cols="35"
+                placeholder='Type advertisement description here'></textarea>
+                <br/>
+                <input type="submit" value="Submit">
+             </form>
+AD;
+
+
+
         $reset =
             "<a href="
-            .$BASEURL."index.php?view=landing&c=reset_controller>
+            .$BASEURL."index.php?c=reset_controller>
             Reset Counter</a>";
         $upload =
             "<a href="
             .$BASEURL."index.php?view=upload_page&c=uploader>
             Upload Ad</a>";
+        $this->data["ad_form"] = $ad_input;
         $this->data["reset_link"] = $reset;
         $this->data["upload_link"] = $upload;
-        $this->data["counter_lists"] = $this->puller->click_query();
+        $this->data["counter_lists"] = $this->get_ad_click_lists();
 
 
 //echo "setup complete";
@@ -57,4 +84,6 @@ $ctrl->setup();
 
 //TODO parse url with $_SERVER["REQUEST_URI"] to get method_name.
 ?>
+
+
 

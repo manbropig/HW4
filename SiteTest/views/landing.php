@@ -25,7 +25,7 @@ CS 174
     </p>
 </div>
 
-<div id="Advertisement">
+<div id="Advertisement" style="background-color:#EDE275">
     <?php
     /*
      * 10 news articles appearing in different order each time it loads.

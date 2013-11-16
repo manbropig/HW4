@@ -91,18 +91,19 @@ class data_puller extends connector
             echo "Failed to connect to MySQL: " . mysqli_connect_error();
         }
 
-        $clicks_query = "SELECT TITLE, CLICKS FROM ADS";
+        $clicks_query = "SELECT ID, TITLE, CLICKS FROM ADS";
         if($results = mysqli_query($this->con, $clicks_query))
         {
             $num_rows = mysqli_num_rows($results);
-            $clicks = "";
+            $res = array(array());
             for($i = 0; $i < $num_rows; $i++)
             {
                 $row = mysqli_fetch_array($results);
-                $clicks = $clicks . $row['TITLE'] ."\t". $row['CLICKS'] . "\n";
+                $res[0][$i] = $row['TITLE'] ."\t". $row['CLICKS'];
+                $res[1][$i] = $row['ID'];
             }
 
-            return $clicks;
+            return $res;
         }
         else
         {

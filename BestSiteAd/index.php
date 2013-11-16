@@ -22,6 +22,21 @@ if(isset($_REQUEST['c']))
 if(isset($_REQUEST['view']))
     $view = $_REQUEST['view'].".php";
 
+if(isset($_REQUEST['c'])){
+
+        if($_REQUEST['c'] == "reset_controller")
+        {
+                $c = $_REQUEST['c'].".php";
+        }
+
+        if($_REQUEST['c'] == "delete_ad")
+        {
+                $c = $_REQUEST['c'].".php";
+        }
+    require_once('controllers/' . $c );
+}
+
+
 if($method != null)
 {
     $c = 'ad_getter.php';
