@@ -36,11 +36,10 @@ class data_putter extends connector
     {
         global $table_name;
         $max_id = parent::get_rows($table_name);
-        $max_id++;
         $title = $data["title"];
         $URL = $data["URL"];
         $desc = $data["desc"];
-        $query = "INSERT INTO $table_name (TITLE, URL, DSCR, CLICKS) VALUES('$title', '$URL', '$desc', $max_id)";
+        $query = "INSERT INTO $table_name (TITLE, URL, DSCR, ID, CLICKS) VALUES('$title', '$URL', '$desc', $max_id, 0)";
         $this->in_query($query);
     }
 
