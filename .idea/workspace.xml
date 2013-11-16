@@ -40,7 +40,7 @@
       <file leaf-file-name="landing.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SiteTest/views/landing.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="7" selection-start="306" selection-end="306" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="450">
+            <state line="18" column="32" selection-start="302" selection-end="302" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
@@ -49,7 +49,7 @@
       <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SiteTest/controllers/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="37" selection-start="1441" selection-end="1441" vertical-scroll-proportion="-0.9237435" vertical-offset="1238" max-vertical-offset="2730">
+            <state line="160" column="37" selection-start="4027" selection-end="4027" vertical-scroll-proportion="0.45553538" vertical-offset="2149" max-vertical-offset="2745">
               <folding />
             </state>
           </provider>
@@ -213,14 +213,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="6" y="22" width="998" height="749" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20903361" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20903361" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -285,14 +285,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SiteTest/views/landing.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="7" selection-start="306" selection-end="306" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="450">
+        <state line="18" column="32" selection-start="302" selection-end="302" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="450">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SiteTest/controllers/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="37" selection-start="1441" selection-end="1441" vertical-scroll-proportion="-0.9237435" vertical-offset="1238" max-vertical-offset="2730">
+        <state line="160" column="37" selection-start="4027" selection-end="4027" vertical-scroll-proportion="0.45553538" vertical-offset="2149" max-vertical-offset="2745">
           <folding />
         </state>
       </provider>

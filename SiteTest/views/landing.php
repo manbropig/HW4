@@ -16,7 +16,7 @@ CS 174
 <body onload="requestAd()">
 
 <?php
-echo $ctrl->story_string;
+echo $ctrl->build_story_string();
 ?>
 </body>
 

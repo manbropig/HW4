@@ -45,7 +45,7 @@ class controller
         $this->putter = new data_putter();
         $this->save_stories();
         $this->change_story_order();
-        $this->story_string = $this->build_story_string();;
+//        $this->story_string = $this->build_story_string();
     }
 
     /**
@@ -158,13 +158,14 @@ AD;
             unset($this->stories[$key]);
         }
 
-        array_splice($this->stories,0,1,$insert);
+        array_splice($this->stories,1,0,$insert);
+        //var_dump($this->stories);
     }
 
     function build_story_string()
     {
         $string = "";
-        for($i = 0; $i < sizeof($i) ; $i++)
+        for($i = 0; $i < sizeof($this->stories) ; $i++)
         {
             $string .= $this->stories[$i];
         }
