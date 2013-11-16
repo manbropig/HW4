@@ -2,16 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f11dc9ab-698b-40f0-a95e-6dcaadb0ae0f" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SiteTest/controllers/cleaner.php" afterPath="$PROJECT_DIR$/SiteTest/controllers/ad_builder.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SiteTest/views/confirmation.php" afterPath="$PROJECT_DIR$/SiteTest/views/ad_page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BestSiteAd/controllers/ad_getter.php" afterPath="$PROJECT_DIR$/BestSiteAd/controllers/ad_getter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BestSiteAd/controllers/cleaner.php" afterPath="$PROJECT_DIR$/BestSiteAd/controllers/cleaner.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BestSiteAd/index.php" afterPath="$PROJECT_DIR$/BestSiteAd/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SiteTest/controllers/proxy.php" afterPath="$PROJECT_DIR$/SiteTest/controllers/proxy.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BestSiteAd/models/puller.php" afterPath="$PROJECT_DIR$/BestSiteAd/models/puller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BestSiteAd/models/putter.php" afterPath="$PROJECT_DIR$/BestSiteAd/models/putter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BestSiteAd/controllers/star.php" afterPath="$PROJECT_DIR$/BestSiteAd/controllers/star.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/controllers/cleaner.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/controllers/incrementer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/controllers/uploader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/controllers/usher.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/0.5star.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/0.5stars.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/0stars.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/1.5stars.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/1star.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/1stars.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/2.5stars.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/2stars.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/3.5stars.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/3stars.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/4.5stars.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/4stars.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/5stars.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/emptyStar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/filledStar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/starsFilled1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/starsFilled2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/starsFilled3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/starsFilled4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/starsNotFilled1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/starsNotFilled2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/starsNotFilled3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/images/starsNotFilled4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/views/upload_page.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SiteTest/controllers/main.php" afterPath="$PROJECT_DIR$/SiteTest/controllers/main.php" />
     </list>
     <ignored path="hw4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,60 +53,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="proxy.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="proxy.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SiteTest/controllers/proxy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="25" selection-start="4226" selection-end="4226" vertical-scroll-proportion="0.1295938" vertical-offset="1883" max-vertical-offset="2655">
+            <state line="106" column="110" selection-start="3645" selection-end="3734" vertical-scroll-proportion="-4.2" vertical-offset="1380" max-vertical-offset="2655">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ad_builder.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SiteTest/controllers/ad_builder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="287" selection-end="287" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="435">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ad_page.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SiteTest/views/ad_page.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="8" selection-start="352" selection-end="352" vertical-scroll-proportion="-5.0" vertical-offset="165" max-vertical-offset="840">
-              <folding>
-                <marker date="1384639565000" expanded="true" signature="480:550" placeholder="..." />
-                <marker date="1384639565000" expanded="true" signature="751:807" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SiteTest/controllers/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="169" column="37" selection-start="4248" selection-end="4248" vertical-scroll-proportion="-14.416667" vertical-offset="2189" max-vertical-offset="2745">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ad_getter.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BestSiteAd/controllers/ad_getter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="8" selection-start="1383" selection-end="1383" vertical-scroll-proportion="-29.375" vertical-offset="0" max-vertical-offset="1245">
-              <folding>
-                <marker date="1384639306000" expanded="true" signature="1652:1807" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="putter.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BestSiteAd/models/putter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="32" selection-start="1334" selection-end="1334" vertical-scroll-proportion="-33.75" vertical-offset="0" max-vertical-offset="1005">
+            <state line="131" column="73" selection-start="3708" selection-end="3708" vertical-scroll-proportion="0.38860103" vertical-offset="1740" max-vertical-offset="2745">
               <folding />
             </state>
           </provider>
@@ -96,7 +74,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SiteTest/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="136" selection-end="156" vertical-scroll-proportion="8.083333" vertical-offset="269" max-vertical-offset="825">
+            <state line="5" column="0" selection-start="136" selection-end="156" vertical-scroll-proportion="3.375" vertical-offset="156" max-vertical-offset="825">
               <folding />
             </state>
           </provider>
@@ -135,7 +113,6 @@
       <list>
         <option value="$PROJECT_DIR$/SiteTest/index.php" />
         <option value="$PROJECT_DIR$/SiteTest/views/landing.php" />
-        <option value="$PROJECT_DIR$/SiteTest/controllers/main.php" />
         <option value="$PROJECT_DIR$/BestSiteAd/models/db_con.php" />
         <option value="$PROJECT_DIR$/BestSiteAd/index.php" />
         <option value="$PROJECT_DIR$/BestSiteAd/models/putter.php" />
@@ -148,6 +125,7 @@
         <option value="$PROJECT_DIR$/BestSiteAd/controllers/ad_getter.php" />
         <option value="$PROJECT_DIR$/SiteTest/views/ad_page.php" />
         <option value="$PROJECT_DIR$/SiteTest/controllers/proxy.php" />
+        <option value="$PROJECT_DIR$/SiteTest/controllers/main.php" />
       </list>
     </option>
   </component>
@@ -418,20 +396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SiteTest/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="136" selection-end="156" vertical-scroll-proportion="8.083333" vertical-offset="269" max-vertical-offset="825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SiteTest/controllers/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="37" selection-start="4248" selection-end="4248" vertical-scroll-proportion="-14.416667" vertical-offset="2189" max-vertical-offset="2745">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BestSiteAd/models/putter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="32" selection-start="1334" selection-end="1334" vertical-scroll-proportion="-33.75" vertical-offset="0" max-vertical-offset="1005">
@@ -454,7 +418,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="8" selection-start="1383" selection-end="1383" vertical-scroll-proportion="-29.375" vertical-offset="0" max-vertical-offset="1245">
           <folding>
-            <marker date="1384639306000" expanded="true" signature="1652:1807" placeholder="..." />
+            <marker date="1384639306000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -470,15 +434,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="8" selection-start="352" selection-end="352" vertical-scroll-proportion="-5.0" vertical-offset="165" max-vertical-offset="840">
           <folding>
-            <marker date="1384639565000" expanded="true" signature="480:550" placeholder="..." />
-            <marker date="1384639565000" expanded="true" signature="751:807" placeholder="..." />
+            <marker date="1384639565000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1384639565000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SiteTest/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="136" selection-end="156" vertical-scroll-proportion="3.375" vertical-offset="156" max-vertical-offset="825">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SiteTest/controllers/proxy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="25" selection-start="4226" selection-end="4226" vertical-scroll-proportion="0.1295938" vertical-offset="1883" max-vertical-offset="2655">
+        <state line="106" column="110" selection-start="3645" selection-end="3734" vertical-scroll-proportion="-4.2" vertical-offset="1380" max-vertical-offset="2655">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SiteTest/controllers/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="131" column="73" selection-start="3708" selection-end="3708" vertical-scroll-proportion="0.38860103" vertical-offset="1740" max-vertical-offset="2745">
           <folding />
         </state>
       </provider>

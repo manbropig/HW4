@@ -89,48 +89,48 @@ class controller
     {
         $story1 = <<<one
 <div>
-    Story number 1
+    <h3>Bull Attacks Shopping Cart</h3>
     <p>
-    blah blah blah<br/>blah blah blah<br/>
-    blah blah blah<br/>blah blah blah<br/>
-    blah blah blah<br/>blah blah blah<br/>
-    end of story.
+    At a local Target store a bull attacked a red shopping cart.
+    Luckily there were no injuries...<br/>
+    "<a href="localhost/">read more</a>"
     </p>
 </div>
 one;
 
         $story2 = <<<TWO
 <div>
-    Story number 2
+    <h3>Purple People Eaters May Exist</h3>
     <p>
-    blah blah blah<br/>blah blah blah<br/>
-    blah blah blah<br/>blah blah blah<br/>
-    blah blah blah<br/>blah blah blah<br/>
-    end of story.
+    Maybe they do, maybe they don't...
+    How should I know?<br/>
+    "<a href="localhost/">read more</a>"
     </p>
 </div>
 TWO;
 
         $story3 = <<<THR
 <div>
-    Story number 3
+    <h3>Eating 10X a day may not be good for you</h3>
     <p>
-    blah blah blah<br/>blah blah blah<br/>
-    blah blah blah<br/>blah blah blah<br/>
-    blah blah blah<br/>blah blah blah<br/>
-    end of story.
+    According to research, those who eat more than<br/>
+    10 meals a day seem to be developing health problems<br/>
+    such as obesity and heart disease. These people<br/>
+    also seem to have very low IQs.<br/>
+    "<a href="localhost/">read more</a>"
     </p>
 </div>
 THR;
 
         $story4 = <<<FOUR
 <div>
-    Story number 4
+    <h3>Could investing in education be the right move?</h3>
     <p>
-    blah blah blah<br/>blah blah blah<br/>
-    blah blah blah<br/>blah blah blah<br/>
-    blah blah blah<br/>blah blah blah<br/>
-    end of story.
+    Contrary to Fox news, investing in education may lead<br/>
+    to better people in general. Learning about the world<br/>
+    and new perspectives, along with ethics and how to make<br/>
+    well informed decisions MIGHT lead to a better world in general.<br/>
+    "<a href="localhost/">read more</a>"
     </p>
 </div>
 FOUR;
