@@ -29,9 +29,9 @@ $table_maker = "CREATE TABLE IF NOT EXISTS $table_name
     PRIMARY KEY (ID))";
 
 $connector->create_table($table_maker);
-$titles = array("Motorized Bumper Boats", "Magic Wand TV Remote", "Bubble Wrap Calendar", "Jedi Bath Robes");
+$titles = array("Motorized Bumper Boats", "Magic Wand TV Remote", "Bubble Wrap Calendar", "Jedi Bath Robes", "News Stories");
 
-$urls = array("www.bumperboats.com", "www.magicremotes.com", "www.bubblewrapcalendar.com", "www.jedirobes.com");
+$urls = array("www.bumperboats.com", "www.magicremotes.com", "www.bubblewrapcalendar.com", "www.jedirobes.com", "none");
 
 $descriptions = array(
 "Have all the bumper car fun you have at the amusement park anywhere there is a pool! only $99.99 per bumper boat, so have a splash!",
@@ -40,7 +40,9 @@ $descriptions = array(
 
 "Enjoy counting down the days with this brilliant bubble wrap calendar Everyday that goes by, you can feel the sweet satisfaction of popping a bubble! Only $20.00 for a year of fun! ",
 
-"Smell like a jedi after every shower with your very own jedi (bath) robe! One size fits all, even Jabba the Hut could fit in one of these! $80.00 ");
+"Smell like a jedi after every shower with your very own jedi (bath) robe! One size fits all, even Jabba the Hut could fit in one of these! $80.00",
+
+"news stories");
 
 for($p = 0; $p < sizeof($descriptions); $p++)
 {
@@ -51,6 +53,9 @@ for($p = 0; $p < sizeof($descriptions); $p++)
     $putter->in_query($query);
 }
 
+$ad0query = "UPDATE $table_name SET ID = 0 where ID = 5";
+
+$connector->in_query($ad0query);
 
 $connector->close_db();
 
