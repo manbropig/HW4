@@ -35,10 +35,12 @@ class data_putter extends connector
     function upload_ad($data)
     {
         global $table_name;
+        $max_id = parent::get_rows($table_name);
+        $max_id++;
         $title = $data["title"];
         $URL = $data["URL"];
         $desc = $data["desc"];
-        $query = "INSERT INTO $table_name (TITLE, URL, DSCR, CLICKS) VALUES('$title', '$URL', '$desc', 0)";
+        $query = "INSERT INTO $table_name (TITLE, URL, DSCR, CLICKS) VALUES('$title', '$URL', '$desc', $max_id)";
         $this->in_query($query);
     }
 
