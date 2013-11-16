@@ -24,19 +24,28 @@
 // Jamie Tahirkheli - 006547398
 // Zohaib Khan - 007673133
 // CS 174
+if(session_status() == PHP_SESSION_NONE)
+{
+    session_start();//ANY TIME using session, even to get values, must start session
+    $_SESSION['count'] = 0;
+}
+error_reporting(-1);
 $parent_dir = dirname(__FILE__) . '/..';
 include_once($parent_dir . "/config/config.php");
 include_once($parent_dir . "/models/db_con.php");
 
 class controller
 {
-    var $data = array(); //data to be echoed in views
+    var $stories = array(); //stories
 
     public function __construct()
     {
         $this->connector = new connector();
         $this->puller = new data_puller();
         $this->putter = new data_putter();
+        $this->save_stories();
+        $this->change_story_order();
+        $this->story_string = "";
     }
 
     /**
@@ -74,6 +83,92 @@ class controller
             <br/>";
         }
         return $top_list_str;
+    }
+
+    function save_stories()
+    {
+        $story1 = <<<one
+<div>
+    Story number 1
+    <p>
+    blah blah blah<br/>blah blah blah<br/>
+    blah blah blah<br/>blah blah blah<br/>
+    blah blah blah<br/>blah blah blah<br/>
+    end of story.
+    </p>
+</div>
+one;
+
+        $story2 = <<<TWO
+<div>
+    Story number 2
+    <p>
+    blah blah blah<br/>blah blah blah<br/>
+    blah blah blah<br/>blah blah blah<br/>
+    blah blah blah<br/>blah blah blah<br/>
+    end of story.
+    </p>
+</div>
+TWO;
+
+        $story3 = <<<THR
+<div>
+    Story number 3
+    <p>
+    blah blah blah<br/>blah blah blah<br/>
+    blah blah blah<br/>blah blah blah<br/>
+    blah blah blah<br/>blah blah blah<br/>
+    end of story.
+    </p>
+</div>
+THR;
+
+        $story4 = <<<FOUR
+<div>
+    Story number 4
+    <p>
+    blah blah blah<br/>blah blah blah<br/>
+    blah blah blah<br/>blah blah blah<br/>
+    blah blah blah<br/>blah blah blah<br/>
+    end of story.
+    </p>
+</div>
+FOUR;
+
+        $ad = <<<AD
+<div id="Advertisement" style="background-color:#EDE275">
+</div>
+AD;
+
+        $this->stories = [$story1, $ad, $story2, $story3, $story4];
+}
+
+
+    function change_story_order()
+    {
+        $order = ++$_SESSION['count'];
+        $ad = $this->stories[1];
+        $insert = array($ad);
+        for($i = 0; $i < $order; $i++)
+        {
+            $story = array_shift($this->stories);
+            $this->stories[] = $story;
+
+        }
+        if (($key = array_search($ad, $this->stories)) !== false) {
+            unset($this->stories[$key]);
+        }
+
+        array_splice($this->stories,0,1,$insert);
+    }
+
+    function build_story_string()
+    {
+        $string = "";
+        for($i = 0; $i < sizeof($i) ; $i++)
+        {
+            
+        }
     }
 }
 $ctrl = new controller();
