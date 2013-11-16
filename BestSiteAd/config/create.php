@@ -21,7 +21,7 @@ $connector->drop_db($db_name);
 $connector->create_db($db_name);
 $connector->choose_db($db_name);
 $table_maker = "CREATE TABLE IF NOT EXISTS $table_name
-    (ID INTEGER(3) NOT NULL AUTO_INCREMENT,
+    (ID INTEGER(3) NOT NULL,
     TITLE VARCHAR(30),
     URL VARCHAR(50),
     DSCR VARCHAR(200),
@@ -29,12 +29,12 @@ $table_maker = "CREATE TABLE IF NOT EXISTS $table_name
     PRIMARY KEY (ID))";
 
 $connector->create_table($table_maker);
-$titles = array("Motorized Bumper Boats", "Magic Wand TV Remote", "Bubble Wrap Calendar", "Jedi Bath Robes", "News Stories");
+$titles = array("News Stories", "Magic Wand TV Remote", "Bubble Wrap Calendar", "Jedi Bath Robes", "Motorized Bumper Boats");
 
-$urls = array("www.bumperboats.com", "www.magicremotes.com", "www.bubblewrapcalendar.com", "www.jedirobes.com", "none");
+$urls = array("none", "www.magicremotes.com", "www.bubblewrapcalendar.com", "www.jedirobes.com", "www.bumperboats.com");
 
 $descriptions = array(
-"Have all the bumper car fun you have at the amusement park anywhere there is a pool! only $99.99 per bumper boat, so have a splash!",
+"news stories",
 
 "Change the channel with a flick of your wrist with our Magic Wand TV Remote, only $89.99. A small price to pay for an enchanting TV watching experience! ",
 
@@ -42,20 +42,16 @@ $descriptions = array(
 
 "Smell like a jedi after every shower with your very own jedi (bath) robe! One size fits all, even Jabba the Hut could fit in one of these! $80.00",
 
-"news stories");
+"Have all the bumper car fun you have at the amusement park anywhere there is a pool! only $99.99 per bumper boat, so have a splash!");
 
 for($p = 0; $p < sizeof($descriptions); $p++)
-{
+{   
     $title = $titles[$p];
     $url = $urls[$p];
     $desc = $descriptions[$p];
-    $query = "INSERT INTO $table_name VALUES(0,\"$title\", \"$url\", \"$desc\", 0 )";
+    $query = "INSERT INTO $table_name VALUES(\"$p\",\"$title\", \"$url\", \"$desc\", 0 )";
     $putter->in_query($query);
 }
-
-$ad0query = "UPDATE $table_name SET ID = 0 where ID = 5";
-
-$connector->in_query($ad0query);
 
 $connector->close_db();
 
