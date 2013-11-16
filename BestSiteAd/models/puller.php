@@ -91,7 +91,7 @@ class data_puller extends connector
             echo "Failed to connect to MySQL: " . mysqli_connect_error();
         }
 
-        $clicks_query = "SELECT ID, TITLE, CLICKS FROM ADS";
+        $clicks_query = "SELECT ID, TITLE, CLICKS FROM ADS WHERE ID > 0";
         if($results = mysqli_query($this->con, $clicks_query))
         {
             $num_rows = mysqli_num_rows($results);
