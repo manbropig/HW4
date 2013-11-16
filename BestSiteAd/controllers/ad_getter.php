@@ -61,8 +61,9 @@ class Ad_Getter extends controller
         $clicks = $details['clicks'];
 
         //<?xml version="1.0" encoding="utf-8"
-//        <!DOCTYPE ad "ad.dtd" >
+//        <!DOCTYPE ad SYSTEM "xml/ad.dtd" >
 $xml = <<<XML
+<!DOCTYPE ad SYSTEM "xml/ad.dtd" >
 <ad>
     <adid>$id</adid>
     <adtitle>$title</adtitle>
