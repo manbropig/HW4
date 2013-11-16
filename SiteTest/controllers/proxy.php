@@ -35,9 +35,14 @@ class proxy extends controller
         global $longURL,$BASEURL;
 
         $id = $_GET["id"];
+        $title = $_GET['title'];
         $link = "$longURL"."BestSiteAd/index.php/increment-choice/?id=".$id;
         $this->proxy_get($link);//web service request
-        echo '<meta http-equiv="refresh" content="0; url='.$BASEURL.'SiteTest/views/confirmation.php"/>';
+        $url_title = urlencode($title);
+        //this needs to be changed to the appropriate ad site
+        //probably need to pull the data from the webservice again to fill the page
+        echo '<meta http-equiv="refresh" content="0; url='.
+            $BASEURL.'SiteTest/views/ad_page.php?id='.$id.'&adtitle='.$url_title.'"/>';
     }
 
 
@@ -45,21 +50,27 @@ class proxy extends controller
     {
         global $longURL,$BASEURL;
         $id = $_GET["id"];
-        $query = urlencode('UPDATE ADS SET CLICKS=');
-        echo $query . "<br/>";
-        $link = "$longURL"."BestSiteAd/index.php/increment-vulnerable/?q=$query&id=$id";
+        $query = $_GET["q"];
+        $q = urlencode($query);
+        $link = "$longURL"."BestSiteAd/index.php/increment-vulnerable/?id=$id&q=$q";
         echo $this->proxy_get($link);
-//        echo '<meta http-equiv="refresh" content="0; url='.$BASEURL.'SiteTest/views/confirmation.php"/>';
+        echo '<meta http-equiv="refresh" content="0; url='.$BASEURL.
+            'SiteTest/views/ad_page.php"/>';
 
     }
     function get_ad()
     {
         global $longURL, $format;
-        $url = "";
         $ad = $_GET['ad'];
         if($ad =="random")
             $url = "$longURL"."BestSiteAd/index.php/get-ad/?format=".$format;
-
+        else
+        {
+//            echo $_GET['ad'];
+            $title = $_GET['title'];
+            $title = urlencode($title);
+            $url="$longURL"."BestSiteAd/index.php/get-ad/?title=$title&ad=$ad&format=".$format;
+        }
         $response = $this->proxy_get($url);
         $response = utf8_encode($response);
         if($format=="json")
@@ -82,10 +93,24 @@ class proxy extends controller
             $url = $results->adurl;
             $id = $results->adid;
         }
-        $link_back = "<a href=\"controllers/proxy.php?method=increment-choice&id=$id\">$url</a>";
+
+        /**
+         * TO SEE INCREMENT-VULNERABLE IN ACTION:
+         * paste
+         * http://localhost/hw4/sitetest/controllers/proxy.php?method=increment-vulnerable&id=2&q=UPDATE+ADS+SET+DSCR+%3D+%22THIS+IS+A+HORRIBLE+PRODUCT%22%2C+CLICKS+%3D+
+         * into the address bar
+         * Then refresh sitetest's landing page
+         * You will see that the advertisement is not always present.
+         * You can change all of the ID's to super high numbers and not have
+         * to see any advertisements
+         */
+        $link_back = "<a href=\"controllers/proxy.php?method=increment-choice&ad=$id&title=$title\">$url</a>";
+//        $query = urlencode('UPDATE ADS SET CLICKS=');
+//        $link_back = "<a href=\"controllers/proxy.php?method=increment-vulnerable&id=$id&q=$query\">$url</a>";
 
         //table needs formatting in CSS
-        $table = <<<TBL
+        if($ad=="random")
+            $table = <<<TBL
 <table>
 <caption>Advertisement</caption>
 <tr>
@@ -99,6 +124,29 @@ class proxy extends controller
 </tr>
 </table>
 TBL;
+        else
+        {
+            $table = <<<PGE
+<table>
+<caption>$title</caption>
+<td>Welcome to the $title website!</td>
+</tr>
+<tr>
+<td>$desc</td>
+</tr>
+<tr>
+<td>To purchase this item, search for it on Amazon</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td>Also if you know any web programmers, we could use some help...</td>
+</tr>
+</table>
+PGE;
+
+        }
 
         echo $table;
 

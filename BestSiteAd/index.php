@@ -7,6 +7,7 @@ if(session_status() == PHP_SESSION_NONE)
 {
     session_start();//ANY TIME using session, even to get values, must start session
 }
+error_reporting(-1);
 
 include_once("config/config.php");
 

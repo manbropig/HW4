@@ -18,19 +18,10 @@ class data_putter extends connector
             echo "Failed to connect to MySQL: " . mysqli_connect_error();
         }
         mysqli_query($this->con, $query);
-
     }
 
 
-    function add_click($id)
-    {
-        global $table_name;
-        $puller = new data_puller();
-        $inc = $puller->get_clicks($id);
-        $inc++;
-        $query = "UPDATE $table_name SET CLICKS=$inc WHERE ID=$id";
-        $this->in_query($query);
-    }
+
 
     function upload_ad($data)
     {
@@ -40,6 +31,16 @@ class data_putter extends connector
         $URL = $data["URL"];
         $desc = $data["desc"];
         $query = "INSERT INTO $table_name (TITLE, URL, DSCR, ID, CLICKS) VALUES('$title', '$URL', '$desc', $max_id, 0)";
+        $this->in_query($query);
+    }
+
+    function add_click($id)
+    {
+        global $table_name;
+        $puller = new data_puller();
+        $inc = $puller->get_clicks($id);
+        $inc++;
+        $query = "UPDATE $table_name SET CLICKS=$inc WHERE ID=$id";
         $this->in_query($query);
     }
 

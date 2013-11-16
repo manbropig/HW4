@@ -137,7 +137,7 @@ class cleaner extends controller
     }
 }
 
-$cleaner = new cleaner();
+$cleaner = new ad_builder();
 $cleaner->upload_poem();
 
 ?>

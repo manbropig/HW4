@@ -7,22 +7,21 @@ include_once($parent_dir . "/config/config.php");
 include_once($parent_dir . "/models/db_con.php");
 include_once($parent_dir . "/controllers/main.php");
 
-
-/*
- *
-*/
 class Ad_Getter extends controller
 {
     function __construct()
     {
         global $method;
 
-        $format = $_REQUEST['format'];
         parent::__construct();
 
         if($method=="get-ad")
         {
-            $details = $this->puller->get_rand_ad();
+            $format = $_REQUEST['format'];
+            if(isset($_REQUEST['ad']))
+                $details = $this->puller->get_ad($_REQUEST['ad']);
+            else
+                $details = $this->puller->get_rand_ad();
             if($format=="json")
             {
                 $data = utf8_encode(json_encode($details));
@@ -45,10 +44,7 @@ class Ad_Getter extends controller
         {
             $id = $_REQUEST['id'];
             $query = $_REQUEST['q'];
-            echo $query . '<br/>';
             $this->putter->add_vulnerable($query,$id);
-            //NOT WORKING
-//            echo $query;
         }
     }
 
@@ -60,8 +56,6 @@ class Ad_Getter extends controller
         $url = $details["url"];
         $clicks = $details['clicks'];
 
-        //<?xml version="1.0" encoding="utf-8"
-//        <!DOCTYPE ad SYSTEM "xml/ad.dtd" >
 $xml = <<<XML
 <!DOCTYPE ad SYSTEM "xml/ad.dtd" >
 <ad>
