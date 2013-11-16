@@ -62,11 +62,11 @@ AD;
 
         $reset =
             "<a href="
-            .$BASEURL."index.php?c=reset_controller>
+            .$BASEURL."controllers/reset_controller.php>
             Reset Counter</a>";
         $upload =
             "<a href="
-            .$BASEURL."index.php?view=upload_page&c=uploader>
+            .$BASEURL."controllers/delete_ad.php>
             Upload Ad</a>";
         $this->data["ad_form"] = $ad_input;
         $this->data["reset_link"] = $reset;
