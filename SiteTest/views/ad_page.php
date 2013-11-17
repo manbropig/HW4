@@ -20,7 +20,7 @@ class linked_page
         echo $title_string;
         $this->title = "<title>$title_string</title>";
         $this->data['css'] =  '<link rel="stylesheet"
-        type="text/css" href="/HW4/siteTest/css/limerick_styles.css"/>';
+        type="text/css" href="/HW4/siteTest/css/ad_styles.css"/>';
         $this->data['title'] = $this->title;
 
     }

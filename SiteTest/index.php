@@ -16,7 +16,7 @@ CS 174
 <head>
     <meta charset="utf-8">
 </head>
-<link rel="stylesheet" type="text/css" href="css/limerick_Styles.css">
+<link rel="stylesheet" type="text/css" href="css/ad_styles.css">
 
 <?php
 include_once("config/config.php");
@@ -37,7 +37,7 @@ if(isset($_REQUEST['c']))
 if(isset($_REQUEST['view']))
     $view = $_REQUEST['view'].".php";
 
-echo $c . ' ' . $view;
+//echo $c . ' ' . $view;
 require_once('controllers/' . $c );
 require_once('views/' . $view );
 

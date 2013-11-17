@@ -19,7 +19,7 @@ abstract class view
     var $recent = array();  //list of top 10 recently added poems - make display function
     var $top = array();     //list of top 10 rated poems - make display function
     var $random;            //link to pick random poem from DB to be displayed
-    const css = '<link rel="stylesheet" type="text/css" href="/HW3/css/limerick_styles.css"/>';
+    const css = '<link rel="stylesheet" type="text/css" href="/HW4/SiteTest/css/ad_styles.css"/>';
 
 
     /**

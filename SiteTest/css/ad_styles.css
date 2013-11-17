@@ -15,7 +15,7 @@
 	color:#ff0000;
 }
 
-h2
+h3
 {
 	font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
 }
@@ -25,6 +25,13 @@ h2
 	background-color:yellow;
 	color:teal;
 }
+
+#Advertisement
+{
+    background-color:#EDE275;
+    width:500px;
+}
+
 html
 {
 	background-color:yellow;

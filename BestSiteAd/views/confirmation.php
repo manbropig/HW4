@@ -20,7 +20,7 @@ class confirmation extends view
         global $usher;
         $this->title = '<title>Poem Confirmation</title>';
         $this->data['css'] =  '<link rel="stylesheet"
-        type="text/css" href="/HW3/css/limerick_styles.css"/>';
+        type="text/css" href="/HW3/css/ad_styles.css"/>';
         $this->data['message'] = $usher->message;
         $this->data['redirect'] = $usher->redirect;
         $this->data['title'] = $this->title;

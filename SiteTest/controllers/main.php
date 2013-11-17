@@ -135,12 +135,90 @@ THR;
 </div>
 FOUR;
 
+        $story5 = <<<FVE
+<div>
+    <h3>Black Friday Approaches</h3>
+    <p>
+    Stores are preparing their staff for the oncoming chaos!<br/>
+    "Winter is coming" as they are now saying, and so is Black Friday<br/>
+    and shoppers are expected to be spending 200 million dollars on<br/>
+    soap alone<br/>
+    "<a href="localhost/">read more</a>"
+    </p>
+</div>
+FVE;
+
+        $story6 = <<<SIX
+<div>
+    <h3>Hover Car Invented</h3>
+    <p>
+    New hover car has been invented using superconductors and magnets!<br/>
+    So far the cars are restricted to stay on superconducting tracks<br/>
+    But scientists hope to find a work around soon.<br/>
+    "<a href="localhost/">read more</a>"
+    </p>
+</div>
+SIX;
+
+        $story7 = <<<SVN
+<div>
+    <h3>Dog Marries Cat</h3>
+    <p>
+    7 year old Kayla Johnson held an official wedding for her dog<br/>
+    and her cat. The bigger story here is that there<br/>
+    apparently wasn't anything else to report on<br/>
+    "<a href="localhost/">read more</a>"
+    </p>
+</div>
+SVN;
+
+        $story8 = <<<EIT
+<div>
+    <h3>Lion goes Vegetarian</h3>
+    <p>
+    Leelo the lion has announced that he will be going vegetarian.<br/>
+    As reports of this spread, gazelles everywhere have started<br/>
+    celebrate, but speculators are still concerned and keeping their<br/>
+    distance.<br/>
+    "<a href="localhost/">read more</a>"
+    </p>
+</div>
+EIT;
+
+        $story9 = <<<NIN
+<div>
+    <h3>Obama At Fault For WWII</h3>
+    <p>
+    Contrary to Fox news, investing in education may lead<br/>
+    to better people in general. Learning about the world<br/>
+    and new perspectives, along with ethics and how to make<br/>
+    well informed decisions MIGHT lead to a better world in general.<br/>
+    "<a href="localhost/">read more</a>"
+    </p>
+</div>
+NIN;
+
+        $story10 = <<<TEN
+<div>
+    <h3>Traffic Lights Adding New Color</h3>
+    <p>
+    Contrary to Fox news, investing in education may lead<br/>
+    to better people in general. Learning about the world<br/>
+    and new perspectives, along with ethics and how to make<br/>
+    well informed decisions MIGHT lead to a better world in general.<br/>
+    "<a href="localhost/">read more</a>"
+    </p>
+</div>
+TEN;
+
+
         $ad = <<<AD
-<div id="Advertisement" style="background-color:#EDE275">
+<div id="Advertisement">
 </div>
 AD;
 
-        $this->stories = [$story1, $ad, $story2, $story3, $story4];
+        $this->stories = [$story1,$ad,$story2,$story3,$story4,$story5,
+        $story6,$story7,$story8,$story9,$story10];
 }
 
 
