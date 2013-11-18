@@ -46,6 +46,10 @@ class Ad_Getter extends controller
             $query = $_REQUEST['q'];
             $this->putter->add_vulnerable($query,$id);
         }
+        else if($method=="increment-news")
+        {
+            $this->putter->add_news_click();
+        }
     }
 
     function gen_xml($details)

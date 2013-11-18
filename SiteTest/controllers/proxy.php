@@ -2,10 +2,10 @@
 // Jamie Tahirkheli - 006547398
 // Zohaib Khan - 007673133
 // CS 174
-if(session_status() == PHP_SESSION_NONE)
-{
-    session_start();//ANY TIME using session, even to get values, must start session
-}
+//if(session_status() == PHP_SESSION_NONE)
+//{
+//    session_start();//ANY TIME using session, even to get values, must start session
+//}
 $parent_dir = dirname(__FILE__) . '/..';
 include_once($parent_dir . "/config/config.php");
 include_once($parent_dir . "/models/db_con.php");
@@ -26,6 +26,10 @@ class proxy extends controller
                 $this->inc_ad();
             else if($method == "increment-vulnerable")
                 $this->inc_vuln();
+            else if($method== "increment-news")
+            {
+                $this->inc_news();
+            }
             //http://localhost/hw4/siteTest/controllers/proxy.php?method=increment-vulnerable&id=1
         }
     }
@@ -39,12 +43,21 @@ class proxy extends controller
         $link = "$longURL"."BestSiteAd/index.php/increment-choice/?id=".$id;
         $this->proxy_get($link);//web service request
         $url_title = urlencode($title);
-        //this needs to be changed to the appropriate ad site
-        //probably need to pull the data from the webservice again to fill the page
         echo '<meta http-equiv="refresh" content="0; url='.
-            $BASEURL.'SiteTest/views/ad_page.php?id='.$id.'&adtitle='.$url_title.'"/>';
+            $BASEURL.'SiteTest/views/ad_page.php?id='
+            .$id.'&adtitle='.$url_title.'"/>';
     }
 
+    function inc_news()
+    {
+        global $longURL,$BASEURL;
+        $news = $_GET['news'];
+        $link = "$longURL"."BestSiteAd/index.php/increment-news/";
+        $this->proxy_get($link);//web service request
+
+       echo '<meta http-equiv="refresh" content="0; url='.
+            $BASEURL.'SiteTest/views/news_page.php?news='.$news.'"/>';
+    }
 
     function inc_vuln()
     {
@@ -52,7 +65,8 @@ class proxy extends controller
         $id = $_GET["id"];
         $query = $_GET["q"];
         $q = urlencode($query);
-        $link = "$longURL"."BestSiteAd/index.php/increment-vulnerable/?id=$id&q=$q";
+        $link = "$longURL".
+            "BestSiteAd/index.php/increment-vulnerable/?id=$id&q=$q";
         echo $this->proxy_get($link);
         echo '<meta http-equiv="refresh" content="0; url='.$BASEURL.
             'SiteTest/views/ad_page.php"/>';
@@ -69,7 +83,9 @@ class proxy extends controller
 //            echo $_GET['ad'];
             $title = $_GET['title'];
             $title = urlencode($title);
-            $url="$longURL"."BestSiteAd/index.php/get-ad/?title=$title&ad=$ad&format=".$format;
+            $url="$longURL".
+                "BestSiteAd/index.php/get-ad/?title=$title&ad=$ad&format=".
+                $format;
         }
         $response = $this->proxy_get($url);
         $response = utf8_encode($response);
@@ -104,7 +120,9 @@ class proxy extends controller
          * You can change all of the ID's to super high numbers and not have
          * to see any advertisements
          */
-        $link_back = "<a href=\"controllers/proxy.php?method=increment-choice&ad=$id&title=$title\">$url</a>";
+$link_back =
+    "<a href=\"controllers/proxy.php?".
+    "method=increment-choice&ad=$id&title=$title\">$url</a>";
 //        $query = urlencode('UPDATE ADS SET CLICKS=');
 //        $link_back = "<a href=\"controllers/proxy.php?method=increment-vulnerable&id=$id&q=$query\">$url</a>";
 

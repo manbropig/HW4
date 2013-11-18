@@ -5,6 +5,7 @@ CS 174
 -->
 <?php
 $parent_dir = dirname(__FILE__) . '/..';
+include_once($parent_dir . "/config/config.php");
 include_once($parent_dir . "/controllers/ad_builder.php");
 
 class linked_page
@@ -15,7 +16,8 @@ class linked_page
     }
     function setup_page()
     {
-        $t = $_REQUEST['adtitle'];
+        if(isset($_REQUEST['adtitle']))
+            $t = $_REQUEST['adtitle'];
         $title_string = urldecode($t);
         echo $title_string;
         $this->title = "<title>$title_string</title>";

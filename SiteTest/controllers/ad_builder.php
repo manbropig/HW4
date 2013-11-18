@@ -10,7 +10,6 @@ class ad_builder extends proxy
 {
     function __construct()
     {
-
         parent::get_ad();
     }
 

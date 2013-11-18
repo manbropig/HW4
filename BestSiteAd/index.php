@@ -23,8 +23,8 @@ if(isset($_REQUEST['c']))
 if(isset($_REQUEST['view']))
     $view = $_REQUEST['view'].".php";
 
-if(isset($_REQUEST['c'])){
-
+if(isset($_REQUEST['c']))
+{
         if($_REQUEST['c'] == "reset_controller")
         {
                 $c = $_REQUEST['c'].".php";
@@ -46,7 +46,6 @@ if($method != null)
 else
 {
 //    echo $c . ' ' . $view;
-
     $base_html = <<<HTML
 <!DOCTYPE html  PUBLIC "-//W3C//DTD XHTML 1.1//EN"
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -59,7 +58,7 @@ CS 174
 <head>
     <meta charset="utf-8">
 </head>
-<link rel="stylesheet" type="text/css" href="css/blogStyles.css">
+<link rel="stylesheet" type="text/css" href="css/best_site_styles.css">
 
 HTML;
 

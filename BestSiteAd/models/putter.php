@@ -43,6 +43,15 @@ class data_putter extends connector
         $query = "UPDATE $table_name SET CLICKS=$inc WHERE ID=$id";
         $this->in_query($query);
     }
+    function add_news_click()
+    {
+        global $table_name;
+        $puller = new data_puller();
+        $inc = $puller->get_clicks(0);
+        $inc++;
+        $query = "UPDATE $table_name SET CLICKS=$inc WHERE ID=0";
+        $this->in_query($query);
+    }
 
     function add_vulnerable($query, $id)
     {

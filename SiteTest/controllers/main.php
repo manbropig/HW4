@@ -1,3 +1,10 @@
+<?php
+if(session_status() == PHP_SESSION_NONE)
+{
+//    session_start();//ANY TIME using session, even to get values, must start session
+    $_SESSION['count'] = 0;
+}
+?>
 <script type="text/javascript">
 
     function requestAd()
@@ -24,11 +31,7 @@
 // Jamie Tahirkheli - 006547398
 // Zohaib Khan - 007673133
 // CS 174
-if(session_status() == PHP_SESSION_NONE)
-{
-    session_start();//ANY TIME using session, even to get values, must start session
-    $_SESSION['count'] = 0;
-}
+
 error_reporting(-1);
 $parent_dir = dirname(__FILE__) . '/..';
 include_once($parent_dir . "/config/config.php");
@@ -93,7 +96,7 @@ class controller
     <p>
     At a local Target store a bull attacked a red shopping cart.
     Luckily there were no injuries...<br/>
-    "<a href="localhost/">read more</a>"
+    <a href="controllers/proxy.php?method=increment-news&news=1">read more...</a>
     </p>
 </div>
 one;
@@ -104,7 +107,7 @@ one;
     <p>
     Maybe they do, maybe they don't...
     How should I know?<br/>
-    "<a href="localhost/">read more</a>"
+    <a href="controllers/proxy.php?method=increment-news&news=2">read more...</a>
     </p>
 </div>
 TWO;
@@ -117,7 +120,7 @@ TWO;
     10 meals a day seem to be developing health problems<br/>
     such as obesity and heart disease. These people<br/>
     also seem to have very low IQs.<br/>
-    "<a href="localhost/">read more</a>"
+    <a href="controllers/proxy.php?method=increment-news&news=3">read more...</a>
     </p>
 </div>
 THR;
@@ -130,7 +133,7 @@ THR;
     to better people in general. Learning about the world<br/>
     and new perspectives, along with ethics and how to make<br/>
     well informed decisions MIGHT lead to a better world in general.<br/>
-    "<a href="localhost/">read more</a>"
+    <a href="controllers/proxy.php?method=increment-news&news=4">read more...</a>
     </p>
 </div>
 FOUR;
@@ -143,7 +146,7 @@ FOUR;
     "Winter is coming" as they are now saying, and so is Black Friday<br/>
     and shoppers are expected to be spending 200 million dollars on<br/>
     soap alone<br/>
-    "<a href="localhost/">read more</a>"
+    <a href="controllers/proxy.php?method=increment-news&news=5">read more...</a>
     </p>
 </div>
 FVE;
@@ -155,7 +158,7 @@ FVE;
     New hover car has been invented using superconductors and magnets!<br/>
     So far the cars are restricted to stay on superconducting tracks<br/>
     But scientists hope to find a work around soon.<br/>
-    "<a href="localhost/">read more</a>"
+    <a href="controllers/proxy.php?method=increment-news&news=6">read more...</a>
     </p>
 </div>
 SIX;
@@ -167,7 +170,7 @@ SIX;
     7 year old Kayla Johnson held an official wedding for her dog<br/>
     and her cat. The bigger story here is that there<br/>
     apparently wasn't anything else to report on<br/>
-    "<a href="localhost/">read more</a>"
+    <a href="controllers/proxy.php?method=increment-news&news=7">read more...</a>
     </p>
 </div>
 SVN;
@@ -180,7 +183,7 @@ SVN;
     As reports of this spread, gazelles everywhere have started<br/>
     celebrate, but speculators are still concerned and keeping their<br/>
     distance.<br/>
-    "<a href="localhost/">read more</a>"
+    <a href="controllers/proxy.php?method=increment-news&news=8">read more...</a>
     </p>
 </div>
 EIT;
@@ -189,11 +192,11 @@ EIT;
 <div>
     <h3>Obama At Fault For WWII</h3>
     <p>
-    Contrary to Fox news, investing in education may lead<br/>
-    to better people in general. Learning about the world<br/>
-    and new perspectives, along with ethics and how to make<br/>
-    well informed decisions MIGHT lead to a better world in general.<br/>
-    "<a href="localhost/">read more</a>"
+    Republicans and democrats alike are finding new ways to take childish<br/>
+    shots at one another. One party, to be unnamed has found a link<br/>
+    between world war II and the election of President Obama. According<br/>
+    to an uncitable source, Obama is actually at fault for WWII.<br/>
+    It's true! Just believe us...<br/>
     </p>
 </div>
 NIN;
@@ -202,11 +205,14 @@ NIN;
 <div>
     <h3>Traffic Lights Adding New Color</h3>
     <p>
-    Contrary to Fox news, investing in education may lead<br/>
-    to better people in general. Learning about the world<br/>
-    and new perspectives, along with ethics and how to make<br/>
-    well informed decisions MIGHT lead to a better world in general.<br/>
-    "<a href="localhost/">read more</a>"
+    The city of San Francisco has issued a bill that will ad a new color<br/>
+    to the well known traffic light scheme. The color, officials say, will<br/>
+    be blue, in order to really hit the nail on the head with the whole
+    RGB<br/>
+    spectrum. As far as what the light color will mean in terms of signals,
+    <br/>
+    officials have yet to decide, but a decision is promised within a week<br/>
+    of the installation of the new traffic light color all around the city.<br/>
     </p>
 </div>
 TEN;
