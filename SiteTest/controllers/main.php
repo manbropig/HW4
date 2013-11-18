@@ -203,7 +203,13 @@ AD;
      */
     function change_story_order()
     {
-        $order = ++$_SESSION['count'];
+        if(isset($_SESSION['count']))
+            $order = ++$_SESSION['count'];
+        else
+        {
+            $_SESSION['count'] = 1;
+            $order = 1;
+        }
         $ad = $this->stories[1];
         $insert = array($ad);
         for($i = 0; $i < $order; $i++)
