@@ -164,6 +164,7 @@ EIT;
     between world war II and the election of President Obama. According<br/>
     to an uncitable source, Obama is actually at fault for WWII.<br/>
     It's true! Just believe us...<br/>
+    <a href="controllers/proxy.php?method=increment-news&news=9">read more...</a>
     </p>
 </div>
 NIN;
@@ -180,6 +181,7 @@ NIN;
     <br/>
     officials have yet to decide, but a decision is promised within a week<br/>
     of the installation of the new traffic light color all around the city.<br/>
+    <a href="controllers/proxy.php?method=increment-news&news=10">read more...</a>
     </p>
 </div>
 TEN;

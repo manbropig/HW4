@@ -2,37 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f11dc9ab-698b-40f0-a95e-6dcaadb0ae0f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/config/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/config/issues.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/0.5star.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/0.5stars.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/0stars.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/1.5stars.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/1star.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/1stars.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/2.5stars.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/2stars.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/3.5stars.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/3stars.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/4.5stars.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/4stars.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/5stars.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/emptyStar.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/filledStar.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/starsFilled1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/starsFilled2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/starsFilled3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/starsFilled4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/starsNotFilled1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/starsNotFilled2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/starsNotFilled3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/images/starsNotFilled4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BestSiteAd/xml/xml.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/config/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/config/create.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SiteTest/config/issues.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SiteTest/config/config.php" afterPath="$PROJECT_DIR$/SiteTest/config/config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SiteTest/controllers/main.php" afterPath="$PROJECT_DIR$/SiteTest/controllers/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SiteTest/controllers/proxy.php" afterPath="$PROJECT_DIR$/SiteTest/controllers/proxy.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hw4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,10 +30,8 @@
       <file leaf-file-name="proxy.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SiteTest/controllers/proxy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="8" selection-start="3493" selection-end="4009" vertical-scroll-proportion="-5.0" vertical-offset="1560" max-vertical-offset="2925">
-              <folding>
-                <element signature="e#6#37#0" expanded="true" />
-              </folding>
+            <state line="46" column="53" selection-start="1458" selection-end="1458" vertical-scroll-proportion="-5.75" vertical-offset="462" max-vertical-offset="2820">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -69,7 +39,7 @@
       <file leaf-file-name="news_page.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SiteTest/views/news_page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="833" selection-end="833" vertical-scroll-proportion="-15.041667" vertical-offset="269" max-vertical-offset="825">
+            <state line="42" column="0" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="825">
               <folding>
                 <marker date="1384732621000" expanded="true" signature="495:561" placeholder="..." />
               </folding>
@@ -80,7 +50,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SiteTest/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="0" selection-start="903" selection-end="903" vertical-scroll-proportion="-25.0" vertical-offset="0" max-vertical-offset="825">
+            <state line="40" column="0" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="825">
               <folding />
             </state>
           </provider>
@@ -89,25 +59,25 @@
       <file leaf-file-name="ad_builder.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SiteTest/controllers/ad_builder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="40" selection-start="115" selection-end="115" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="420">
+            <state line="4" column="40" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="420">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SiteTest/controllers/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="59" selection-start="1552" selection-end="1552" vertical-scroll-proportion="-8.78" vertical-offset="386" max-vertical-offset="3645">
+            <state line="183" column="64" selection-start="5743" selection-end="5743" vertical-scroll-proportion="0.81654674" vertical-offset="2291" max-vertical-offset="3675">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SiteTest/config/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="2" selection-start="408" selection-end="408" vertical-scroll-proportion="0.37769786" vertical-offset="0" max-vertical-offset="556">
+            <state line="13" column="17" selection-start="405" selection-end="405" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="300">
               <folding />
             </state>
           </provider>
@@ -116,7 +86,7 @@
       <file leaf-file-name="ad_page.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SiteTest/views/ad_page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="49" selection-start="139" selection-end="139" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="870">
+            <state line="7" column="49" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="870">
               <folding>
                 <marker date="1384732475000" expanded="true" signature="574:638" placeholder="..." />
               </folding>
@@ -127,7 +97,7 @@
       <file leaf-file-name="landing.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BestSiteAd/views/landing.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="29.375" vertical-offset="705" max-vertical-offset="1500">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="1500">
               <folding />
             </state>
           </provider>
@@ -163,10 +133,10 @@
         <option value="$PROJECT_DIR$/SiteTest/controllers/ad_builder.php" />
         <option value="$PROJECT_DIR$/SiteTest/views/ad_page.php" />
         <option value="$PROJECT_DIR$/SiteTest/views/news_page.php" />
-        <option value="$PROJECT_DIR$/SiteTest/controllers/proxy.php" />
         <option value="$PROJECT_DIR$/SiteTest/controllers/news_builder.php" />
-        <option value="$PROJECT_DIR$/SiteTest/controllers/main.php" />
         <option value="$PROJECT_DIR$/SiteTest/config/config.php" />
+        <option value="$PROJECT_DIR$/SiteTest/controllers/proxy.php" />
+        <option value="$PROJECT_DIR$/SiteTest/controllers/main.php" />
       </list>
     </option>
   </component>
@@ -203,7 +173,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -342,6 +311,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,10 +350,9 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21743697" sideWeight="0.6703645" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22268908" sideWeight="0.6703645" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20903361" sideWeight="0.3926868" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -392,6 +361,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -412,9 +382,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20903361" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -438,53 +408,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SiteTest/css/ad_styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1890">
-          <folding />
-        </state>
+        <state line="17" column="2" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1890" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SiteTest/views/page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="7" selection-start="858" selection-end="858" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="720">
-          <folding>
-            <marker date="1384715438000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="24" column="7" selection-start="858" selection-end="858" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="720" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BestSiteAd/models/putter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="28" selection-start="1062" selection-end="1062" vertical-scroll-proportion="-6.875" vertical-offset="510" max-vertical-offset="1140">
-          <folding />
-        </state>
+        <state line="45" column="28" selection-start="1062" selection-end="1062" vertical-scroll-proportion="-6.875" vertical-offset="510" max-vertical-offset="1140" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BestSiteAd/controllers/ad_getter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="44" selection-start="1482" selection-end="1482" vertical-scroll-proportion="-13.541667" vertical-offset="425" max-vertical-offset="1305">
-          <folding>
-            <marker date="1384721959000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="50" column="44" selection-start="1482" selection-end="1482" vertical-scroll-proportion="-13.541667" vertical-offset="425" max-vertical-offset="1305" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SiteTest/controllers/ad_builder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="40" selection-start="115" selection-end="115" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="420">
+        <state line="4" column="40" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="420">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SiteTest/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="903" selection-end="903" vertical-scroll-proportion="-25.0" vertical-offset="0" max-vertical-offset="825">
+        <state line="40" column="0" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="825">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SiteTest/views/news_page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="833" selection-end="833" vertical-scroll-proportion="-15.041667" vertical-offset="269" max-vertical-offset="825">
+        <state line="42" column="0" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="825">
           <folding>
             <marker date="1384732621000" expanded="true" signature="495:561" placeholder="..." />
           </folding>
@@ -500,25 +458,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BestSiteAd/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="28" selection-start="970" selection-end="970" vertical-scroll-proportion="-27.5" vertical-offset="0" max-vertical-offset="1560">
-          <folding>
-            <marker date="1384722529000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1384722529000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1384722529000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="47" column="28" selection-start="970" selection-end="970" vertical-scroll-proportion="-27.5" vertical-offset="0" max-vertical-offset="1560" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BestSiteAd/views/landing.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="29.375" vertical-offset="705" max-vertical-offset="1500">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="1500">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SiteTest/views/ad_page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="49" selection-start="139" selection-end="139" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="870">
+        <state line="7" column="49" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="870">
           <folding>
             <marker date="1384732475000" expanded="true" signature="574:638" placeholder="..." />
           </folding>
@@ -527,30 +479,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SiteTest/views/landing.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="32" selection-start="302" selection-end="302" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="450">
+        <state line="18" column="32" selection-start="302" selection-end="302" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="450" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SiteTest/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="17" selection-start="405" selection-end="405" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="300">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SiteTest/controllers/proxy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="8" selection-start="3493" selection-end="4009" vertical-scroll-proportion="-5.0" vertical-offset="1560" max-vertical-offset="2925">
-          <folding>
-            <element signature="e#6#37#0" expanded="true" />
-          </folding>
+        <state line="46" column="53" selection-start="1458" selection-end="1458" vertical-scroll-proportion="-5.75" vertical-offset="462" max-vertical-offset="2820">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SiteTest/controllers/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="59" selection-start="1552" selection-end="1552" vertical-scroll-proportion="-8.78" vertical-offset="386" max-vertical-offset="3645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SiteTest/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="2" selection-start="408" selection-end="408" vertical-scroll-proportion="0.37769786" vertical-offset="0" max-vertical-offset="556">
+        <state line="183" column="64" selection-start="5743" selection-end="5743" vertical-scroll-proportion="0.81654674" vertical-offset="2291" max-vertical-offset="3675">
           <folding />
         </state>
       </provider>
