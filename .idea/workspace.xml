@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f11dc9ab-698b-40f0-a95e-6dcaadb0ae0f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SiteTest/controllers/main.php" afterPath="$PROJECT_DIR$/SiteTest/controllers/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.txt" afterPath="$PROJECT_DIR$/README.txt" />
     </list>
     <ignored path="hw4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,7 +88,7 @@
       <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SiteTest/controllers/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="209" column="34" selection-start="6287" selection-end="6287" vertical-scroll-proportion="0.403255" vertical-offset="2912" max-vertical-offset="3765">
+            <state line="201" column="49" selection-start="6100" selection-end="6100" vertical-scroll-proportion="0.18625678" vertical-offset="2912" max-vertical-offset="3765">
               <folding />
             </state>
           </provider>
@@ -529,7 +528,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SiteTest/controllers/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="209" column="34" selection-start="6287" selection-end="6287" vertical-scroll-proportion="0.403255" vertical-offset="2912" max-vertical-offset="3765">
+        <state line="201" column="49" selection-start="6100" selection-end="6100" vertical-scroll-proportion="0.18625678" vertical-offset="2912" max-vertical-offset="3765">
           <folding />
         </state>
       </provider>

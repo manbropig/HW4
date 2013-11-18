@@ -7,6 +7,8 @@ If you are using XAMPP I don't think you'd need to change anything. Just run the
 
 Then navigate to localhost/HW4/.
 
+Please use either Firefox or Safari so that the web service will function properly.
+
 If you are not using XAMPP please change the path for $longURL to the directory you put the folder (HW4) in.
 
 Then navigate to localhost/HW4/siteTest and localhost/HW4/bestSitead in your browser.
