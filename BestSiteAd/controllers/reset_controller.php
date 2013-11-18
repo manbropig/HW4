@@ -29,9 +29,6 @@ class reset extends controller
                     .$BASEURL.
                     'index.php?view=landing&c=main"/>';
 
-
-                echo "this is working";
-
 }
 }
 $ctrl = new reset();

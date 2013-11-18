@@ -130,18 +130,10 @@ class connector
 
             $query = "UPDATE ads SET CLICKS = 0";
 
-            if(mysqli_query($this->con, $query))
-            {
-                    echo "database updated";
-            }
-            else
-            {
-                echo "database not updated";
-            }
+            mysqli_query($this->con, $query);
         }
 
     /**
-
      * @param $i - title in db
      * Executes a query to delete specific AD
      */
@@ -155,20 +147,11 @@ class connector
 
             $query = "DELETE FROM ads WHERE ID= \"$i\"";
 
-            if(mysqli_query($this->con, $query))
-            {
-                    echo "database updated";
-
-            }
-            else
-            {
-                echo "database not updated";
-            }
+            mysqli_query($this->con, $query);
         }
 
 
     /**
-
      * @param $query
      * Executes a query getting the rating result
      */

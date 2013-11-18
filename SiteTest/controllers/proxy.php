@@ -44,8 +44,8 @@ class proxy extends controller
         $this->proxy_get($link);//web service request
         $url_title = urlencode($title);
         echo '<meta http-equiv="refresh" content="0; url='.
-            $BASEURL.'SiteTest/views/ad_page.php?id='
-            .$id.'&adtitle='.$url_title.'"/>';
+            $BASEURL.'SiteTest/views/ad_page.php?ad='
+            .$id.'&title='.$url_title.'"/>';
     }
 
     function inc_news()
@@ -84,8 +84,7 @@ class proxy extends controller
             $title = $_GET['title'];
             $title = urlencode($title);
             $url="$longURL".
-                "BestSiteAd/index.php/get-ad/?title=$title&ad=$ad&format=".
-                $format;
+                "BestSiteAd/index.php/get-ad/?title=$title&ad=$ad&format=". $format;
         }
         $response = $this->proxy_get($url);
         $response = utf8_encode($response);

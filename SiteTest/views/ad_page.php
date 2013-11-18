@@ -16,8 +16,8 @@ class linked_page
     }
     function setup_page()
     {
-        if(isset($_REQUEST['adtitle']))
-            $t = $_REQUEST['adtitle'];
+        if(isset($_REQUEST['title']))
+            $t = $_REQUEST['title'];
         $title_string = urldecode($t);
         echo $title_string;
         $this->title = "<title>$title_string</title>";
@@ -46,7 +46,7 @@ $view->display_page();
 ?>
 <body>
 <?php
-$builder = new ad_builder();
+//$builder = new ad_builder();
 ?>
 </body>
 </html>
