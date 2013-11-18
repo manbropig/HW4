@@ -51,43 +51,10 @@ class controller
 //        $this->story_string = $this->build_story_string();
     }
 
+
     /**
-     * @return string
-     * Asks model for most recently added poems
+     * creates and saves all stories and html into an array
      */
-    function get_most_recent()
-    {
-        global $BASEURL;
-        //get 10 most recent titles
-        $rec_array = $this->puller->recent_query();
-
-        //create links for each poem page
-        $link = "$BASEURL". "index.php?view=landing&c=main&p=";
-        $recent_list_str = "";
-        foreach($rec_array as $ID => $title)
-        {
-            $recent_list_str .= "<a href=\"".$link.$ID."\">$title</a>
-            <br/>";
-        }
-        return $recent_list_str;
-    }
-
-    function get_top_rated()
-    {
-        global $BASEURL;
-        $top_array = $this->puller->top_query();
-
-        //create links for each poem page
-        $link = "$BASEURL". "index.php?view=landing&c=main&p=";
-        $top_list_str = "";
-        foreach($top_array as $ID => $title)
-        {
-            $top_list_str .= "<a href=\"".$link.$ID."\">$title</a>
-            <br/>";
-        }
-        return $top_list_str;
-    }
-
     function save_stories()
     {
         $story1 = <<<one
@@ -228,6 +195,10 @@ AD;
 }
 
 
+    /**
+     * This function changes the story order every time the page is loaded
+     * but it keeps the ad in the second position
+     */
     function change_story_order()
     {
         $order = ++$_SESSION['count'];
@@ -246,6 +217,11 @@ AD;
         //var_dump($this->stories);
     }
 
+    /**
+     * This function puts the content for the whole site test page
+     * into one string
+     * @return string
+     */
     function build_story_string()
     {
         $string = "";

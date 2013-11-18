@@ -10,6 +10,6 @@ $BASEURL = '/HW4/';
 $longURL = 'localhost' . $BASEURL;
 
 //request configuration of either xml or json from config file
-$format = "xml";
-//$format = "json";
+//$format = "xml";
+$format = "json";
 ?>
