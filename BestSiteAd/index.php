@@ -66,7 +66,7 @@ HTML;
 
     require_once('controllers/' . $c );
     if($c != "delete_ad.php")
-    require_once('views/' . $view );
+        require_once('views/' . $view );
     echo "</html>";
 }
 

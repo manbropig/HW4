@@ -21,7 +21,7 @@ class delete extends controller
         global $BASEURL;
 
         if(isset($_REQUEST['i']))
-        $i = $_REQUEST['i'];
+            $i = $_REQUEST['i'];
 
                 $connection = new connector();
                 $connection-> delete_ad($i);

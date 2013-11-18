@@ -44,7 +44,8 @@ class proxy extends controller
         $this->proxy_get($link);//web service request
         $url_title = urlencode($title);
         echo '<meta http-equiv="refresh" content="0; url='.
-            $BASEURL.'SiteTest/views/ad_page.php?id='.$id.'&adtitle='.$url_title.'"/>';
+            $BASEURL.'SiteTest/views/ad_page.php?id='
+            .$id.'&adtitle='.$url_title.'"/>';
     }
 
     function inc_news()
@@ -121,7 +122,7 @@ class proxy extends controller
          */
 $link_back =
     "<a href=\"controllers/proxy.php?".
-    "method=increment-choice&ad=$id&title=$title\">$url</a>";
+    "method=increment-choice&id=$id&title=$title\">$url</a>";
 //        $query = urlencode('UPDATE ADS SET CLICKS=');
 //        $link_back = "<a href=\"controllers/proxy.php?method=increment-vulnerable&id=$id&q=$query\">$url</a>";
 
