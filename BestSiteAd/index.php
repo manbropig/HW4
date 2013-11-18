@@ -63,7 +63,9 @@ CS 174
 HTML;
 
     echo $base_html;
+
     require_once('controllers/' . $c );
+    if($c != "delete_ad.php")
     require_once('views/' . $view );
     echo "</html>";
 }

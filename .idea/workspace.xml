@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f11dc9ab-698b-40f0-a95e-6dcaadb0ae0f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SiteTest/controllers/main.php" afterPath="$PROJECT_DIR$/SiteTest/controllers/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SiteTest/controllers/proxy.php" afterPath="$PROJECT_DIR$/SiteTest/controllers/proxy.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BestSiteAd/index.php" afterPath="$PROJECT_DIR$/BestSiteAd/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hw4.iws" />
@@ -30,19 +29,50 @@
       <file leaf-file-name="proxy.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SiteTest/controllers/proxy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="53" selection-start="1458" selection-end="1458" vertical-scroll-proportion="-5.75" vertical-offset="462" max-vertical-offset="2820">
+            <state line="25" column="24" selection-start="725" selection-end="725" vertical-scroll-proportion="-2.4" vertical-offset="165" max-vertical-offset="2820">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news_page.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SiteTest/views/news_page.php">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BestSiteAd/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="825">
+            <state line="67" column="27" selection-start="1433" selection-end="1433" vertical-scroll-proportion="-20.041666" vertical-offset="479" max-vertical-offset="1590">
               <folding>
-                <marker date="1384732621000" expanded="true" signature="495:561" placeholder="..." />
+                <marker date="1384802010000" expanded="true" signature="1099:1160" placeholder="..." />
+                <marker date="1384802010000" expanded="true" signature="1220:1335" placeholder="..." />
+                <marker date="1384802010000" expanded="true" signature="1227:1262" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delete_ad.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BestSiteAd/controllers/delete_ad.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="24" selection-start="458" selection-end="458" vertical-scroll-proportion="0.4856115" vertical-offset="30" max-vertical-offset="630">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ad_getter.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BestSiteAd/controllers/ad_getter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="44" selection-start="1482" selection-end="1482" vertical-scroll-proportion="-13.541667" vertical-offset="425" max-vertical-offset="1305">
+              <folding>
+                <marker date="1384721959000" expanded="true" signature="1760:1915" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="putter.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BestSiteAd/models/putter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="28" selection-start="1062" selection-end="1062" vertical-scroll-proportion="-6.875" vertical-offset="510" max-vertical-offset="1140">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -56,19 +86,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ad_builder.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SiteTest/controllers/ad_builder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="40" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="420">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SiteTest/controllers/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="183" column="64" selection-start="5743" selection-end="5743" vertical-scroll-proportion="0.81654674" vertical-offset="2291" max-vertical-offset="3675">
+            <state line="183" column="64" selection-start="5743" selection-end="5743" vertical-scroll-proportion="-18.916666" vertical-offset="2291" max-vertical-offset="3675">
               <folding />
             </state>
           </provider>
@@ -83,21 +104,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ad_page.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SiteTest/views/ad_page.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="49" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="870">
-              <folding>
-                <marker date="1384732475000" expanded="true" signature="574:638" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="landing.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BestSiteAd/views/landing.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="1500">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="14.375" vertical-offset="345" max-vertical-offset="1500">
               <folding />
             </state>
           </provider>
@@ -121,14 +131,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/SiteTest/views/confirmation.php" />
         <option value="$PROJECT_DIR$/SiteTest/controllers/cleaner.php" />
         <option value="$PROJECT_DIR$/SiteTest/css/limerick_styles.css" />
         <option value="$PROJECT_DIR$/SiteTest/css/ad_styles.css" />
         <option value="$PROJECT_DIR$/SiteTest/views/page.php" />
         <option value="$PROJECT_DIR$/SiteTest/index.php" />
         <option value="$PROJECT_DIR$/BestSiteAd/controllers/ad_getter.php" />
-        <option value="$PROJECT_DIR$/BestSiteAd/index.php" />
         <option value="$PROJECT_DIR$/BestSiteAd/models/putter.php" />
         <option value="$PROJECT_DIR$/SiteTest/controllers/ad_builder.php" />
         <option value="$PROJECT_DIR$/SiteTest/views/ad_page.php" />
@@ -137,12 +145,14 @@
         <option value="$PROJECT_DIR$/SiteTest/config/config.php" />
         <option value="$PROJECT_DIR$/SiteTest/controllers/proxy.php" />
         <option value="$PROJECT_DIR$/SiteTest/controllers/main.php" />
+        <option value="$PROJECT_DIR$/BestSiteAd/index.php" />
+        <option value="$PROJECT_DIR$/BestSiteAd/controllers/delete_ad.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="292" />
+    <option name="x" value="219" />
     <option name="y" value="22" />
     <option name="width" value="998" />
     <option name="height" value="749" />
@@ -309,6 +319,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HW4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HW4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BestSiteAd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -344,7 +372,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="292" y="22" width="998" height="749" extended-state="0" />
+    <frame x="219" y="22" width="998" height="749" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -401,11 +429,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BestSiteAd/controllers/star.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="131" selection-end="131" vertical-scroll-proportion="0.16187051" vertical-offset="0" max-vertical-offset="556" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SiteTest/css/ad_styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="2" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1890" />
@@ -414,16 +437,6 @@
     <entry file="file://$PROJECT_DIR$/SiteTest/views/page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="7" selection-start="858" selection-end="858" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="720" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BestSiteAd/models/putter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="28" selection-start="1062" selection-end="1062" vertical-scroll-proportion="-6.875" vertical-offset="510" max-vertical-offset="1140" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BestSiteAd/controllers/ad_getter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="44" selection-start="1482" selection-end="1482" vertical-scroll-proportion="-13.541667" vertical-offset="425" max-vertical-offset="1305" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SiteTest/controllers/ad_builder.php">
@@ -444,7 +457,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="0" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="825">
           <folding>
-            <marker date="1384732621000" expanded="true" signature="495:561" placeholder="..." />
+            <marker date="1384732621000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -456,23 +469,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BestSiteAd/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="28" selection-start="970" selection-end="970" vertical-scroll-proportion="-27.5" vertical-offset="0" max-vertical-offset="1560" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BestSiteAd/views/landing.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="1500">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SiteTest/views/ad_page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="49" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="870">
           <folding>
-            <marker date="1384732475000" expanded="true" signature="574:638" placeholder="..." />
+            <marker date="1384732475000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -489,16 +490,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SiteTest/controllers/proxy.php">
+    <entry file="file://$PROJECT_DIR$/SiteTest/controllers/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="53" selection-start="1458" selection-end="1458" vertical-scroll-proportion="-5.75" vertical-offset="462" max-vertical-offset="2820">
+        <state line="183" column="64" selection-start="5743" selection-end="5743" vertical-scroll-proportion="-18.916666" vertical-offset="2291" max-vertical-offset="3675">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SiteTest/controllers/main.php">
+    <entry file="file://$PROJECT_DIR$/SiteTest/controllers/proxy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="64" selection-start="5743" selection-end="5743" vertical-scroll-proportion="0.81654674" vertical-offset="2291" max-vertical-offset="3675">
+        <state line="25" column="24" selection-start="725" selection-end="725" vertical-scroll-proportion="-2.4" vertical-offset="165" max-vertical-offset="2820">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestSiteAd/models/putter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="28" selection-start="1062" selection-end="1062" vertical-scroll-proportion="-6.875" vertical-offset="510" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestSiteAd/controllers/ad_getter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="44" selection-start="1482" selection-end="1482" vertical-scroll-proportion="-13.541667" vertical-offset="425" max-vertical-offset="1305">
+          <folding>
+            <marker date="1384721959000" expanded="true" signature="1760:1915" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestSiteAd/views/landing.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="14.375" vertical-offset="345" max-vertical-offset="1500">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestSiteAd/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="27" selection-start="1433" selection-end="1433" vertical-scroll-proportion="-20.041666" vertical-offset="479" max-vertical-offset="1590">
+          <folding>
+            <marker date="1384802010000" expanded="true" signature="1099:1160" placeholder="..." />
+            <marker date="1384802010000" expanded="true" signature="1220:1335" placeholder="..." />
+            <marker date="1384802010000" expanded="true" signature="1227:1262" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestSiteAd/controllers/delete_ad.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="24" selection-start="458" selection-end="458" vertical-scroll-proportion="0.4856115" vertical-offset="30" max-vertical-offset="630">
           <folding />
         </state>
       </provider>
