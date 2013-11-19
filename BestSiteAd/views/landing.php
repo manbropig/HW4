@@ -58,7 +58,7 @@ $landing = new landing_view();
     </h1>';
     ?>
     <title>BestSiteAd</title>
-    <link rel="stylesheet" type="text/css" href="/HW4/BestSiteAd/css/limerick_styles.css"/>
+    <link rel="stylesheet" type="text/css" href="/HW4/BestSiteAd/css/best_site_styles.css"/>
 </head>
 <body>
 
